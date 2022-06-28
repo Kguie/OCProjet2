@@ -25,7 +25,7 @@ header
     align-items: flex-start;
     font-size: 20px;
     font-weight: 500;
-    width: 92%;
+    width: 98%;                  /* diminution de margin */
     margin: auto;
 }
 
@@ -62,12 +62,4 @@ nav/*Positionnement du nav avec la mise en place du hover*/
  {
     color:#0065FC;
     border-top: solid 4px #0065FC;
- }
-
- /*Main*/
-
- main
- {
-    width: 92%;
-    margin: auto;
  }

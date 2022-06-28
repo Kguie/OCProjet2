@@ -1,4 +1,65 @@
-* {
+.box {
+    box-sizing: border-box; /* Opera/IE 8+ */
+    /* box-sizing est appliqué seulement à cette classe */
+  }
+  
+  * {
     box-sizing: border-box;
-   /* box-sizing est appliqué à tous les éléments */
-   }
+    /* box-sizing est appliqué à tous les éléments */
+  }
+
+/*Mise en forme */
+body
+{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+/*Header*/
+
+header 
+{
+    display: flex;
+    flex-direction: column;    /*Passage en colonne*/
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+}
+
+
+#booki /*Positionnement et dimensions du logo Booki*/
+{
+    width: 120px;
+    height: 60px;
+    margin-top: 55px;
+    margin-bottom: 85px;
+}
+
+nav/*Positionnement du nav avec la mise en place du hover*/
+ {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+ nav a
+ {
+    color:black;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    width: 50%;
+    padding-top: 0;
+    padding-bottom: 25px;
+    text-align: center;
+    border-bottom: solid 6px #F2F2F2; /* Ajout de la bordure grise et réagencement*/
+ }
+
+ nav a:hover
+ {
+    color:#0065FC;
+    border-bottom: solid 6px #0065FC;
+    border-top: none;
+ }
