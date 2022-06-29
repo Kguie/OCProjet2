@@ -1,65 +1,141 @@
 .box {
-    box-sizing: border-box; /* Opera/IE 8+ */
-    /* box-sizing est appliqué seulement à cette classe */
-  }
-  
-  * {
-    box-sizing: border-box;
-    /* box-sizing est appliqué à tous les éléments */
-  }
+  box-sizing: border-box; /* Opera/IE 8+ */
+  /* box-sizing est appliqué seulement à cette classe */
+}
+
+* {
+  box-sizing: border-box;
+  /* box-sizing est appliqué à tous les éléments */
+}
 
 /*Mise en forme */
 body
 {
-    font-family: 'Raleway', sans-serif;
-    color: black;
+  font-family: 'Raleway', sans-serif;
+  color: black;
 }
+p
+{
+  font-weight: 400;
+  font-size: 15px;
+}
+
+#blocpage
+{
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+
+
+
 
 /*Header*/
 
 header 
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    font-size: 20px;
-    font-weight: 500;
-    width: 98%;                  /* diminution de margin */
-    margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 14px;
+  font-weight: 500;  
 }
 
 
 #booki /*Positionnement et dimensions du logo Booki*/
 {
-    width: 120px;
-    height: 60px;
-    margin-top: 100px;
-    margin-bottom: 50px;
+  width: 100px;
+  height: 50px;
+  margin-top: 40px;
+  margin-left: 60px;
 }
 
 nav/*Positionnement du nav avec la mise en place du hover*/
- {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
- 
 
- nav a
+
+nav a
+{
+  color:black;
+  text-decoration: none;
+  justify-content: center    ;
+  display: flex;
+  padding-top: 50px;
+  width: 160px;
+  text-align: center;
+  border-top:2px solid transparent ;
+}
+
+nav a:hover
+{
+  color:#0065FC;
+  border-top: solid 2px #0065FC;
+}
+
+/*Main*/
+
+/*Main*/
+main
+{
+  margin:45px ;
+}
+ h1
  {
-    color:black;
-    text-decoration: none;
-    justify-content: center    ;
-    display: flex;
-    padding-top: 105px;
-    width: 325px;
-    text-align: center;
+  font-size: 20px;
+  font-weight: 700;
  }
 
- nav a:hover
+
+ #bar
  {
-    color:#0065FC;
-    border-top: solid 4px #0065FC;
+  display: inline-flex;
+  flex-direction: row;
+  margin-top: 20px;
+  border: #F2F2F2 solid 2px;
+  border-radius: 12px;
+  height: 53px;
+  overflow: hidden;
+ }
+
+ .l-dot
+ {
+  width: 55px;
+  height: 55px;
+  background-color: #F2F2F2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5px
+ }
+
+ #location
+ {
+  font-weight: 700;
+  font-size: 16px;
+  border: #F2F2F2;
+  padding-left: 20px;
+  width: 232px;
+ }
+
+ .button
+ {
+  font-weight: 700;
+  font-size: 16px;
+  border: #0065FC;
+  color: white;
+  background-color: #0065FC;
+  width: 135px;
+
+ }
+
+ .ma_glass
+ {
+display: none;
  }

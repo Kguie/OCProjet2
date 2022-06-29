@@ -1,64 +1,70 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css " />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css "
+    />
     <link rel="stylesheet" type="text/css" href="CSS/normalize.css" />
     <link rel="stylesheet" type="text/css" href="CSS/style.css" />
-    <link rel="stylesheet" type="text/css" media="screen and (max-width: 992px)" href="CSS/medium.css" />
-    <link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="CSS/small.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen and (max-width: 992px)"
+      href="CSS/medium.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen and (max-width: 768px)"
+      href="CSS/small.css"
+    />
 
     <title>Booki</title>
-</head>
+  </head>
 
-<body>
-    <div id="blocpage">
-        <header>
-            <!--Header avec logo et menu de navigation à droite-->
-            <img id="booki" src="images/logo/Booki.png" alt="Booki" />
-            <nav>
-                <a href="#Hébergements">Hébergements</a>
-                <a href="#Activités">Activités</a>
-            </nav>
-        </header>
-        <main>
-            <article id="recherche">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-                
-                <div class="barre">
-                    
-                    <form id="form" method="post" action="http://traitement.php">
-                        <label for="lieu"><i class="fa-solid fa-location-dot"></i></label>
-                        
-                        <input class="lieu" type="search" id="lieu" value="Marseille,France" name="lieu" required/>
-                        <input class="bouton" type="submit" value="Rechercher"/>
-                        <button type="icon" class="bouton">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button> 
-                    </form>
+  <body>
+    <div id="container">
+      <header>
+        <!--Header avec logo et menu de navigation à droite-->
+        <img id="booki" src="images/logo/Booki.png" alt="Booki" />
+        <nav>
+          <a href="#Hébergements">Hébergements</a>
+          <a href="#Activités">Activités</a>
+        </nav>
+      </header>
+      <main>
+        <article id="search">
+          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <p>En plein centre ville ou en pleine nature</p>
 
-                </div>
-                
+          <!--Partie avec formulaire de recherche pour un lieu-->
+          <form id="bar" method="post" action="http://traitement.php">
+            <div class="l-dot"><i class="fa-solid fa-location-dot fa-lg"></i></div>
+            <input
+              type="search"
+              id="location"
+              value="Marseille,France"
+              name="location"
+            />
+            <input class="button" type="submit" value="Rechercher" />
+            <button type="icon" class="ma_glass">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </article>
+        <article id="Hébergements"></article>
 
-            </article>
-            <article id="Hébergements">
+        <article id="Activités"></article>
+      </main>
+      <footer>
 
-            </article>
-
-            <article id="Activités">
-
-            </article>
-
-        </main>
-
-
+      </footer>
     </div>
-</body>
-
+  </body>
 </html>

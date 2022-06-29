@@ -1,65 +1,144 @@
 .box {
-    box-sizing: border-box; /* Opera/IE 8+ */
-    /* box-sizing est appliqué seulement à cette classe */
-  }
-  
-  * {
-    box-sizing: border-box;
-    /* box-sizing est appliqué à tous les éléments */
-  }
+  box-sizing: border-box; /* Opera/IE 8+ */
+  /* box-sizing est appliqué seulement à cette classe */
+}
+
+* {
+  box-sizing: border-box;
+  /* box-sizing est appliqué à tous les éléments */
+}
 
 /*Mise en forme */
 body
 {
-    font-family: 'Raleway', sans-serif;
-    color: black;
+  font-family: 'Raleway', sans-serif;
+  color: black;
 }
+p
+{
+  font-weight: 400;
+  font-size: 15px;
+}
+
+#blocpage
+{
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+
+
+
 
 /*Header*/
 
 header 
 {
-    display: flex;
-    flex-direction: column;    /*Passage en colonne*/
-    justify-content: space-between;
-    align-items: center;
-    font-size: 20px;
-    font-weight: 500;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;  
 }
-
 
 #booki /*Positionnement et dimensions du logo Booki*/
 {
-    width: 120px;
-    height: 60px;
-    margin-top: 55px;
-    margin-bottom: 85px;
+    width: 105px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+
 }
 
 nav/*Positionnement du nav avec la mise en place du hover*/
- {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
- nav a
+
+
+nav a
+{
+  color:black;
+  text-decoration: none;
+  justify-content: center    ;
+  display: flex;
+  width: 50%;
+  text-align: center;
+  border-bottom: solid 4px #F2F2F2 ;
+  border-top: none;
+  padding-top: 0;
+  padding-bottom: 20px ;
+}
+
+nav a:hover
+{
+  color:#0065FC;
+  border-bottom: solid 4px #0065FC;
+  border-top: none;
+}
+
+/*Main*/
+
+main
+{
+  margin:45px ;
+}
+ h1
  {
-    color:black;
-    text-decoration: none;
-    justify-content: center;
-    display: flex;
-    width: 50%;
-    padding-top: 0;
-    padding-bottom: 25px;
-    text-align: center;
-    border-bottom: solid 6px #F2F2F2; /* Ajout de la bordure grise et réagencement*/
+  font-size: 20px;
+  font-weight: 700;
  }
 
- nav a:hover
+
+ #bar
  {
-    color:#0065FC;
-    border-bottom: solid 6px #0065FC;
-    border-top: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 35px;
+  border: #F2F2F2 solid 2px;
+  border-radius: 12px;
+  width: 100%;
+  height: 53px;
+  overflow: hidden;
+ }
+
+ .l-dot
+ {
+  width: 55px;
+  height: 55px;
+  background-color: #F2F2F2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5px
+ }
+
+ #location
+ {
+  font-weight: 700;
+  font-size: 16px;
+  border: #F2F2F2;
+  padding-left: 20px;
+  width: auto;
+ }
+
+ .button
+ {
+display: none;
+ }
+
+ .ma_glass
+ {
+  display: block;
+  border: #0065FC;
+  background-color: #0065FC;
+  border-radius: 12px;
+  width: 50px;
+  height: 50px;
+
  }
