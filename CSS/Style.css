@@ -175,13 +175,18 @@ display: none;
   align-items: center;
   padding-right: 20px;
   position: relative;
- }
+  border-left: transparent;
+  }
 
  .f_link
 {
-  height: 100%;
-  text-align: center;
+  
+  height: 46px;
   padding-top: 12px;
+  position: absolute;
+  width: 92%;
+  top: 0;
+  left: 0;
 }
 
 .f_icon
@@ -190,28 +195,20 @@ display: none;
   padding: 16px;
   border-radius: 50%;
   background-color: #deebff ;
-}
-
-.f_icon .fa-solid
-{
   color: #0065FC;
 }
 
 .filter:hover
 {
   background-color: #0065FC;
-}
-
-.f_link:not(:hover)
-{
-  text-decoration: none;
-  color: black;
-}
-
-.f_link:hover
-{
   color: white;
-  text-decoration: none;
+  
+}
+
+.filter:hover ~ .f_icon
+{  
+  color: white;
+  background-color: #0065FC;
 }
 
  
