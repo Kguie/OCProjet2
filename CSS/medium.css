@@ -8,19 +8,14 @@
 
 /*Main*/
 
-.ma_glass
- {
-display: none;
- }
-
 /*Partie filtres*/
-#filters
+#C_filters
 {
   display: flex;
   flex-direction: column;
 }
 
-#fbars
+#f_bars
 {
   display: flex;
   flex-direction: row;

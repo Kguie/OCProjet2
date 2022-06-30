@@ -53,7 +53,7 @@ nav a:hover
 
 
 
- #bar
+ #searchbar
  {
   display: flex;
   flex-direction: row;
@@ -70,12 +70,12 @@ nav a:hover
    width: auto;
  }
 
- .button
+ #button
  {
 display: none;
  }
 
- .ma_glass
+ #ma_glass
  {
   display: block;
   border: #0065FC;

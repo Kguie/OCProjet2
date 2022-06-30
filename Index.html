@@ -29,7 +29,7 @@
   </head>
 
   <body>
-    <div id="container">
+    <div id="c_page">
       <header>
         <!--Header avec logo et menu de navigation à droite-->
         <img id="booki" src="images/logo/Booki.png" alt="Booki" />
@@ -39,52 +39,52 @@
         </nav>
       </header>
       <main>
-        <article id="search">
+        <article id="A_search">
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
           <p>En plein centre ville ou en pleine nature</p>
 
           <!--Partie avec formulaire de recherche pour un lieu-->
-          <form id="bar" method="post" action="http://traitement.php">
-            <div class="l-dot"><i class="fa-solid fa-location-dot fa-lg"></i></div>
+          <form id="searchbar" method="post" action="http://traitement.php">
+            <div id="l-dot"><i class="fa-solid fa-location-dot fa-lg"></i></div>
             <input
               type="search"
               id="location"
               value="Marseille,France"
               name="location"
             />
-            <input class="button" type="submit" value="Rechercher" />
-            <button type="button" class="ma_glass">
+            <input id="button" type="submit" value="Rechercher" />
+            <button type="button" id="ma_glass">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
 
           <!--Mise en place des filtres -->
-          <div id="filters">
+          <div id="C_filters">
             <p>
               Filtres
             </p>
-            <div id="fbars">
+            <div id="f_bars">
               <div class="filter">
-                <div class="icon"><i class="fa-solid fa-money-bill-wave fa-lg"></i></div>
-                <a class="flink" href="#" class="ftype">économique</a>
+                <div class="f_icon"><i class="fa-solid fa-money-bill-wave fa-lg"></i></div>
+                <a class="f_link" href="#" class="ftype">économique</a>
               </div>
               <div class="filter">
-                <div class="icon"><i class="fa-solid fa-child-reaching fa-lg"></i></div>
-                <a class="flink" href="#"  class="ftype">familial</a>
+                <div class="f_icon"><i class="fa-solid fa-child-reaching fa-lg"></i></div>
+                <a class="f_link" href="#"  class="ftype">familial</a>
               </div>
               <div class="filter">
-                <div class="icon"><i class="fa-solid fa-heart fa-lg"></i></div>
-                <a class="flink" href="#"  class="ftype">romantique</a>
+                <div class="f_icon"><i class="fa-solid fa-heart fa-lg"></i></div>
+                <a class="f_link" href="#"  class="ftype">romantique</a>
               </div>
               <div class="filter">
-                <div class="icon"><i class="fa-solid fa-dog fa-lg"></i></div>
-                <a class="flink" href="#"  class="ftype">Animaux autorisés</a>
+                <div class="f_icon"><i class="fa-solid fa-dog fa-lg"></i></div>
+                <a class="f_link" href="#"  class="ftype">Animaux autorisés</a>
               </div>
             </div>
           </div>
 
-            <div id="info">
-              <div id="cinfo"><i class="fa-solid fa-info"></i></div>
+            <div id="c_info">
+              <div id="info"><i class="fa-solid fa-info"></i></div>
               <p>
                 Plus de 500 logements sont disponibles dans cette ville
               </p>
