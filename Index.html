@@ -29,7 +29,7 @@
   </head>
 
   <body>
-    <div id="container">
+    <div id="c_page">
       <header>
         <!--Header avec logo et menu de navigation à droite-->
         <img id="booki" src="images/logo/Booki.png" alt="Booki" />
@@ -39,29 +39,29 @@
         </nav>
       </header>
       <main>
-        <article id="search">
+        <article id="A_search">
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
           <p>En plein centre ville ou en pleine nature</p>
 
           <!--Partie avec formulaire de recherche pour un lieu-->
-          <form id="bar" method="post" action="http://traitement.php">
-            <div class="l-dot"><i class="fa-solid fa-location-dot fa-lg"></i></div>
+          <form id="searchbar" method="post" action="http://traitement.php">
+            <div id="l-dot"><i class="fa-solid fa-location-dot fa-lg"></i></div>
             <input
               type="search"
               id="location"
               value="Marseille,France"
               name="location"
             />
-            <input class="button" type="submit" value="Rechercher" />
-            <button type="button" class="ma_glass">
+            <input id="button" type="submit" value="Rechercher" />
+            <button type="button" id="ma_glass">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
 
           <!--Ajout d'un formulaire pour les filtres -->
-          <form id="filters" method="post" action="http://traitement.php">
+          <form id="c_filters" method="post" action="http://traitement.php">
             <p class="title">Filtres</p>
-            <div id="fbars"><label class="f_choice" for="economique" id="economique">
+            <div id="c_bars"><label class="f_choice" for="economique" id="economique">
             <input class="filter" type="checkbox" name="economique" />
             <div class="icon"><i class="fa-solid fa-money-bill-wave"></i></div>
             économique
@@ -79,8 +79,8 @@
             <div class="icon"><i class="fa-solid fa-dog"></i></div>
             Animaux autorisés</label></div>
             </form>
-            <div id="info">
-              <div id="cinfo"><i class="fa-solid fa-info"></i></div>
+            <div id="c_info">
+              <div id="info"><i class="fa-solid fa-info"></i></div>
               <p>
                 Plus de 500 logements sont disponibles dans cette ville
               </p>
