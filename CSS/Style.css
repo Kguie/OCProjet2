@@ -153,17 +153,16 @@ display: none;
   flex-direction: row;
  }
 
- .title
+ #filters p
  {
   font-size:16px ;
   font-weight: 700;
   margin-right: 30px;
  }
 
-.f_choice
+.filter
  {
   display: flex;
-  position: relative;
   flex-direction: row;
   font-size:16px ;
   font-weight: 700;
@@ -175,48 +174,49 @@ display: none;
   height: 48px;
   align-items: center;
   padding-right: 20px;
-  }
+ }
 
 .icon
 {
   margin-right: 15px;
   padding: 16px;
   border-radius: 50%;
+  background-color: #deebff ;
+}
+
+.icon .fa-solid
+{
+  color: #0065FC;
 }
 
 
- /*Mise en place de checkboxs pour les filtres*/
 
- .filter
- {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 40px;
-  width: 90%;
- }
+.filter:hover
+{
+  background-color: #0065FC;
+}
 
-  .f_choice:hover
- {
-  background: #0065FC;
+.flink:not(:hover)
+{
+  text-decoration: none;
+  color: black;
+}
+
+.filter a
+{
+  
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.flink:hover
+{
   color: white;
- }
+  text-decoration: none;
+}
 
-
-
- /*Agrandissement et mise en transparence de la checkbox tout en ajoutant un effet pour signifier que la case est cochée*/
-
- .filter:checked ~ .icon
- {
-  background-color:#0065FC  ;
-  color:white;
- }
-
- .filter:not(checked) ~ .icon
- {
-  background-color:#DEEBFF ;
-  color: #0065FC;
- }
 
  
  /*icone et phrase d'info*/

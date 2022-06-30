@@ -58,27 +58,31 @@
             </button>
           </form>
 
-          <!--Ajout d'un formulaire pour les filtres -->
-          <form id="filters" method="post" action="http://traitement.php">
-            <p class="title">Filtres</p>
-            <div id="fbars"><label class="f_choice" for="economique" id="economique">
-            <input class="filter" type="checkbox" name="economique" />
-            <div class="icon"><i class="fa-solid fa-money-bill-wave"></i></div>
-            économique
-            </label>
-            <label class="f_choice" for="familial" id="familial">
-            <input class="filter" type="checkbox" name="familial" />
-            <div class="icon"><i class="fa-solid fa-child-reaching fa-lg"></i></div>
-            Familial</label>
-            <label class="f_choice" for="Romantique" id="Romantique">
-            <input class="filter" type="checkbox" name="Romantique" />
-            <div class="icon"><i class="fa-solid fa-heart"></i></div>
-            Romantique</label>
-            <label class="f_choice" for="Animaux" id="Animaux">
-            <input class="filter" type="checkbox" name="Animaux" />
-            <div class="icon"><i class="fa-solid fa-dog"></i></div>
-            Animaux autorisés</label></div>
-            </form>
+          <!--Mise en place des filtres -->
+          <div id="filters">
+            <p>
+              Filtres
+            </p>
+            <div id="fbars">
+              <div class="filter">
+                <div class="icon"><i class="fa-solid fa-money-bill-wave fa-lg"></i></div>
+                <a class="flink" href="#" class="ftype">économique</a>
+              </div>
+              <div class="filter">
+                <div class="icon"><i class="fa-solid fa-child-reaching fa-lg"></i></div>
+                <a class="flink" href="#"  class="ftype">familial</a>
+              </div>
+              <div class="filter">
+                <div class="icon"><i class="fa-solid fa-heart fa-lg"></i></div>
+                <a class="flink" href="#"  class="ftype">romantique</a>
+              </div>
+              <div class="filter">
+                <div class="icon"><i class="fa-solid fa-dog fa-lg"></i></div>
+                <a class="flink" href="#"  class="ftype">Animaux autorisés</a>
+              </div>
+            </div>
+          </div>
+
             <div id="info">
               <div id="cinfo"><i class="fa-solid fa-info"></i></div>
               <p>

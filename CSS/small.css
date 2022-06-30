@@ -1,36 +1,3 @@
-.box {
-  box-sizing: border-box; /* Opera/IE 8+ */
-  /* box-sizing est appliqué seulement à cette classe */
-}
-
-* {
-  box-sizing: border-box;
-  /* box-sizing est appliqué à tous les éléments */
-}
-
-/*Mise en forme */
-body
-{
-  font-family: 'Raleway', sans-serif;
-  color: black;
-}
-p
-{
-  font-weight: 400;
-  font-size: 15px;
-}
-
-#blocpage
-{
-  width: 100%;
-  margin: 0 auto;
-
-}
-
-
-
-
-
 /*Header*/
 
 header 
@@ -84,15 +51,6 @@ nav a:hover
 
 /*Main*/
 
-main
-{
-  margin:45px ;
-}
- h1
- {
-  font-size: 20px;
-  font-weight: 700;
- }
 
 
  #bar
@@ -105,28 +63,11 @@ main
   width: 334px;
   height: 53px;
   overflow: hidden;
-  
- 
- }
-
- .l-dot
- {
-  width: 55px;
-  height: 55px;
-  background-color: #F2F2F2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 5px
- }
+  }
 
  #location
  {
-  font-weight: 700;
-  font-size: 16px;
-  border: #F2F2F2;
-  padding-left: 20px;
-  width: auto;
+   width: auto;
  }
 
  .button
@@ -149,109 +90,4 @@ display: none;
   }
 
 /*Partie filtres*/
-#filters
-{
- 
- display: flex;
- flex-direction: column;
- margin-top: 30px;
- max-width: 100%;
-}
 
-#fbars
-{
- display: flex;
- flex-direction: row;
-}
-
-.title
-{
- font-size:16px ;
- font-weight: 700;
- margin-right: 30px;
-}
-
-.f_choice
-{
- display: flex;
- position: relative;
- flex-direction: row;
- font-size:16px ;
- font-weight: 700;
- text-transform: capitalize;
- margin-right: 25px;
- border:#F2F2F2 2px solid;
- border-radius: 30px;
- height: 48px;
- align-items: center;
- padding-right: 20px;
- }
-
-.icon
-{
- margin-right: 15px;
- padding: 16px;
- border-radius: 50%;
-}
-
-
-/*Mise en place de checkboxs pour les filtres*/
-
-.filter
-{
- position: absolute;
- opacity: 0;
- cursor: pointer;
- height: 40px;
- width: 90%;
-}
-
- .f_choice:hover
-{
- background: #0065FC;
- color: white;
-}
-
-
-
-/*Agrandissement et mise en transparence de la checkbox tout en ajoutant un effet pour signifier que la case est cochée*/
-
-.filter:checked ~ .icon
-{
- background-color:#0065FC  ;
- color:white;
-}
-
-.filter:not(checked) ~ .icon
-{
- background-color:#DEEBFF ;
- color: #0065FC;
-}
-
-/*Icone et phrase d'info*/
-#info
-{
- display: flex;
- flex-direction: row;
- align-items: center;
- margin: 20px 0 40px 0px;
-}
-
-#cinfo
-{
- display: inline-flex;
- margin-right: 14px;
- color: #0065FC;
- background-color:white ;
- border-radius: 50%;
- border: 1px solid #F2F2F2 ;
- width: 23px;
- height:23px;
-}
-
-#info .fa-solid
-{
- margin: auto;
- font-size: 13px;
-
-}
