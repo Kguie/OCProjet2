@@ -56,8 +56,7 @@ nav/*Positionnement du nav avec la mise en place du hover*/
  {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-}
+  }
 
  
 
@@ -84,7 +83,7 @@ main
 {
   margin:45px ;
 }
- h1
+ h1,h2
  {
   font-size: 20px;
   font-weight: 700;
@@ -169,7 +168,6 @@ display: none;
   flex-direction: row;
   font-size:16px ;
   font-weight: 700;
-  text-transform: capitalize;
   margin-right: 25px;
   margin-bottom:15px ;
   border:#F2F2F2 2px solid;
@@ -248,3 +246,101 @@ display: none;
  font-size: 13px;
 
 }
+
+
+
+/*Article sur les hébergements*/
+
+/*Section Hébergements à Marseille */
+
+
+#Hébergements
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  }
+
+#c_hebergements
+{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 65%;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  padding: 45px 40px 30px 40px;
+}
+
+#c_hebergements .box-row
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.small_box
+{
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  height: 210px ;
+  flex-basis: 30%;
+  background-color: white;
+  justify-content: space-between;
+  padding: 5px;
+  }
+
+.c_sbpic
+{
+  display: block;
+  height: 60%;
+  width: 100%;
+  background-color: blue;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+
+}
+
+.c_sbpic .photo
+{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+#more
+{
+  margin-top: 10px;
+  color: black;
+  text-decoration: none;
+  font-size:16px ;
+  font-weight: 700;
+}
+/*Aside populaire*/
+
+aside
+{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  padding: 45px 40px 30px 40px;
+}
+
+aside .title
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+

@@ -1,99 +1,260 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css "
-    />
-    <link rel="stylesheet" type="text/css" href="CSS/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen and (max-width: 992px)"
-      href="CSS/medium.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen and (max-width: 768px)"
-      href="CSS/small.css"
-    />
 
-    <title>Booki</title>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css " />
+  <link rel="stylesheet" type="text/css" href="CSS/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 992px)" href="CSS/medium.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="CSS/small.css" />
 
-  <body>
-    <div id="c_page">
-      <header>
-        <!--Header avec logo et menu de navigation à droite-->
-        <img id="booki" src="images/logo/Booki.png" alt="Booki" />
-        <nav>
-          <a href="#Hébergements">Hébergements</a>
-          <a href="#Activités">Activités</a>
-        </nav>
-      </header>
-      <main>
-        <article id="A_search">
-          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-          <p>En plein centre ville ou en pleine nature</p>
+  <title>Booki</title>
+</head>
 
-          <!--Partie avec formulaire de recherche pour un lieu-->
-          <form id="searchbar" method="post" action="http://traitement.php">
-            <div id="l-dot"><i class="fa-solid fa-location-dot fa-lg"></i></div>
-            <input
-              type="search"
-              id="location"
-              value="Marseille,France"
-              name="location"
-            />
-            <input id="button" type="submit" value="Rechercher" />
-            <button type="button" id="ma_glass">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </form>
+<body>
+  <div id="c_page">
+    <header>
+      <!--Header avec logo et menu de navigation à droite-->
+      <img id="booki" src="images/logo/Booki.png" alt="Booki" />
+      <nav>
+        <a href="#Hébergements">Hébergements</a>
+        <a href="#Activités">Activités</a>
+      </nav>
+    </header>
+    <main>
+      <article id="A_search">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
 
-          <!--Ajout d'un formulaire pour les filtres -->
-          <form id="c_filters" method="post" action="http://traitement.php">
-            <p class="title">Filtres</p>
-            <div id="c_bars"><label class="f_choice" for="economique" id="economique">
-            <input class="filter" type="checkbox" name="economique" />
-            <div class="icon"><i class="fa-solid fa-money-bill-wave"></i></div>
-            économique
+        <!--Partie avec formulaire de recherche pour un lieu-->
+        <form id="searchbar" method="post" action="http://traitement.php">
+          <div id="l-dot"><i class="fa-solid fa-location-dot fa-lg"></i></div>
+          <input type="search" id="location" value="Marseille,France" name="location" />
+          <input id="button" type="submit" value="Rechercher" />
+          <button type="button" id="ma_glass">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+
+        <!--Ajout d'un formulaire pour les filtres -->
+        <form id="c_filters" method="post" action="http://traitement.php">
+          <p class="title">Filtres</p>
+          <div id="c_bars"><label class="f_choice" for="economique" id="economique">
+              <input class="filter" type="checkbox" name="economique" />
+              <div class="icon"><i class="fa-solid fa-money-bill-wave"></i></div>
+              &#201;conomique
             </label>
             <label class="f_choice" for="familial" id="familial">
-            <input class="filter" type="checkbox" name="familial" />
-            <div class="icon"><i class="fa-solid fa-child-reaching fa-lg"></i></div>
-            Familial</label>
+              <input class="filter" type="checkbox" name="familial" />
+              <div class="icon"><i class="fa-solid fa-child-reaching fa-lg"></i></div>
+              Familial
+            </label>
             <label class="f_choice" for="Romantique" id="Romantique">
-            <input class="filter" type="checkbox" name="Romantique" />
-            <div class="icon"><i class="fa-solid fa-heart"></i></div>
-            Romantique</label>
+              <input class="filter" type="checkbox" name="Romantique" />
+              <div class="icon"><i class="fa-solid fa-heart"></i></div>
+              Romantique
+            </label>
             <label class="f_choice" for="Animaux" id="Animaux">
-            <input class="filter" type="checkbox" name="Animaux" />
-            <div class="icon"><i class="fa-solid fa-dog"></i></div>
-            Animaux autorisés</label></div>
-            </form>
-            <div id="c_info">
-              <div id="info"><i class="fa-solid fa-info"></i></div>
-              <p>
-                Plus de 500 logements sont disponibles dans cette ville
-              </p>
+              <input class="filter" type="checkbox" name="Animaux" />
+              <div class="icon"><i class="fa-solid fa-dog"></i></div>
+              Animaux autorisés
+            </label>
+          </div>
+        </form>
+        <div id="c_info">
+          <div id="info"><i class="fa-solid fa-info"></i></div>
+          <p>
+            Plus de 500 logements sont disponibles dans cette ville
+          </p>
+        </div>
+      </article>
+      <!--Article conternant les hébgements et la section populaires -->
+      <article id="Hébergements">
+      <section id="c_hebergements">
+        <h2>Hébergements à Marseille</h2>
+        <div class="box-row">
+          <div class="small_box">
+            <a href="#" class="sb_link"></a>
+            <div class="c_sbpic">
+              <img class="photo" src="images/hebergements/aubergedelacannebiere.jpg" alt="Auberge de la cannebiere"/>
             </div>
-            
-        </article>
-        <article id="Hébergements"></article>
+            <div class="description">
+              <p class="name">Auberge de La Cannebière</p>
+              <p class="price">Nuit à partir de <span>25 €</span></p>
+              <div class="rate boxh1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="small_box">
+            <a href="#" class="sb_link"></a>
+            <div class="c_sbpic">
+              <img class="photo" src="images/hebergements/hotelduport.jpg" alt="hôtel du port">
+            </div>
+            <div class="description">
+              <p class="name">Hôtel du port</p>
+              <p class="price">Nuit à partir de <span>52 €</span></p>
+              <div class="rate boxh2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="small_box">
+            <a href="#" class="sb_link"></a>
+            <div class="c_sbpic">
+              <img class="photo" src="images/hebergements/hotellesmouettes.jpg" alt="hôtel les mouettes">
+            </div>
+            <div class="description">
+              <p class="name">Hôtel Les mouettes</p>
+              <p class="price">Nuit à partir de <span>76 €</span></p>
+              <div class="rate boxh3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-row">
+          <div class="small_box">
+            <a href="#" class="sb_link"></a>
+            <div class="c_sbpic">
+              <img class="photo"  src="images/hebergements/hoteldelamer.jpg" alt="hôtel de la mer">
+            </div>
+            <div class="description">
+              <p class="name">Hôtel de la mer</p>
+              <p class="price">Nuit à partir de <span>46 €</span></p>
+              <div class="rate boxh4">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="small_box">
+            <a href="#" class="sb_link"></a>
+            <div class="c_sbpic">
+              <img class="photo" src="images/hebergements/aubergelepanier.jpg" alt="auberge le panier">
+            </div>
+            <div class="description">
+              <p class="name">Auberge Le Panier</p>
+              <p class="price">Nuit à partir de <span>23 €</span></p>
+              <div class="rate boxh5">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="small_box">
+            <a href="#" class="sb_link"></a>
+            <div class="c_sbpic">
+              <img class="photo" src="images/hebergements/hotelchezamina.jpg" alt="hôtel chez amina">
+            </div>
+            <div class="description">
+              <p class="name">Hôtel chez Amina</p>
+              <p class="price">Nuit à partir de <span>96 €</span></p>
+              <div class="rate boxh6">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a id="more" href="#">Afficher plus</a> 
+      </section>
 
-        <article id="Activités"></article>
-      </main>
-      <footer>
+      <!--aside-->
+      <aside id="top_aside">
+        <div class="title">
+          <h2>Les plus populaires</h2>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="box-row">
+          <div class="small_box">
+            <a href="#" class="sb_link"></a>
+            <div class="c_sbpic">
+              <img class="photo" src="images/hebergements/aubergedelacannebiere.jpg" alt="Auberge de la cannebiere"/>
+            </div>
+            <div class="description">
+              <p class="name">Auberge de La Cannebière</p>
+              <p class="price">Nuit à partir de <span>25 €</span></p>
+              <div class="rate boxh1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="small_box">
+            <a href="#" class="sb_link"></a>
+            <div class="c_sbpic">
+              <img class="photo" src="images/hebergements/hotelduport.jpg" alt="hôtel du port">
+            </div>
+            <div class="description">
+              <p class="name">Hôtel du port</p>
+              <p class="price">Nuit à partir de <span>52 €</span></p>
+              <div class="rate boxh2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="small_box">
+            <a href="#" class="sb_link"></a>
+            <div class="c_sbpic">
+              <img class="photo" src="images/hebergements/hotellesmouettes.jpg" alt="hôtel les mouettes">
+            </div>
+            <div class="description">
+              <p class="name">Hôtel Les mouettes</p>
+              <p class="price">Nuit à partir de <span>76 €</span></p>
+              <div class="rate boxh3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      </footer>
-    </div>
-  </body>
+      </aside>
+      </article>
+
+      <article id="Activités"></article>
+    </main>
+    <footer>
+
+    </footer>
+  </div>
+</body>
+
 </html>
