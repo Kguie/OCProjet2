@@ -93,34 +93,75 @@ display: none;
   align-self: center;
   }
 
-/*Partie filtres*/
-#c_filters
+
+/*changements hébergements*/
+#Hébergements
 {
- max-width: 100%;
+  width: 100%;
+  height: fit-content;
 }
 
-#fbars
+.hotels
 {
- display: flex;
- flex-direction: row;
+  flex-basis: 1550px;
+  flex-direction: column;
+  border-radius: 0;
+  background-color: white;
 }
 
-/*Mise en place de checkboxs pour les filtres*/
-
-.filter
+.cont_card
 {
- position: absolute;
- opacity: 0;
- cursor: pointer;
- height: 40px;
- width: 90%;
+  height:95% ;
+  width: 90%;
+  background-color: white;
+  border-radius: 0;
+
 }
 
- .f_choice:hover
+.hotels .box-row
 {
- background: #0065FC;
- color: white;
+  flex-direction: column;
+  flex-basis: 46%;
+  
 }
 
 
+.s_card
+{
+ flex-basis: 32%;
+}
+
+.c_scpic .photo
+{
+  height: 125px;
+}
+
+
+
+/*changements dans aside*/
+
+aside
+{
+flex-basis: 640px;
+border-radius: 0;
+}
+
+.c_aside
+{
+  width: 90%;
+  height: 85%;
+  justify-content: space-between;
+}
+
+.c_aside .box-row
+{
+  flex-basis: 89%;
+  
+}
+
+.m_card
+{
+  flex-basis: 32%;
+  
+}
 

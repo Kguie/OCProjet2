@@ -6,12 +6,58 @@
 }
 
 /*Main*/
+main
+{
+  margin: 0;
+}
+
+#A_search
+{
+  margin:45px 45px 0 45px ;
+}
 
 /*Partie filtres*/
 #c_filters
 {
  display: flex;
  flex-direction: column;
+
+}
+
+
+/*Changements sur la partie hébergements*/
+
+#Hébergements
+{
+  flex-direction: column-reverse;
+  width: 95%;
+  margin: 0 auto;
+  height: 1300px;
+
+  
+}
+
+
+
+.hotels
+{
+ 
+  flex-basis: 48%;
+  
+}
+
+.nameandprice
+{
+  line-height: 19px;
+}
+
+
+/*changements sur la partie Aside*/
+
+aside
+{
+
+  flex-basis: 48%;
 
 }
 
