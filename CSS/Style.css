@@ -275,7 +275,7 @@ display: none;
 
 /*Article sur les hébergements*/
 
-#Hébergements
+#lodging
 {
   display: flex;
   flex-direction: row;
@@ -573,7 +573,7 @@ aside .title
   padding-bottom: 20px;
 }
 
-#Activités h2
+#activities h2
 {
   padding-left: 3%;
   margin-bottom: 25px;
@@ -613,7 +613,7 @@ aside .title
 } 
 
                                                    /*Mise en place des cartes activités*/
-#Activités .card
+#activities .card
 {
   flex-direction: column;
 }
@@ -633,7 +633,7 @@ aside .title
   flex-basis:37% ;
 }
 
-#Activités .c-photo
+#activities .c-photo
 {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -656,7 +656,7 @@ aside .title
   height: 110px;
 }
 
-#Activités .description
+#activities .description
 {
  height: 55px;
 }

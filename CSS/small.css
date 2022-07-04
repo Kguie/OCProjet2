@@ -92,7 +92,7 @@ display: none;
 
 
 /*changements hébergements*/
-#Hébergements
+#lodging
 {
   width: 100%;
   height: fit-content;
@@ -205,7 +205,7 @@ border-radius: 0;
   flex-basis:45% ;
 }
 
-#Activités .photo
+#activities .photo
 {
   height:150px;
 }
