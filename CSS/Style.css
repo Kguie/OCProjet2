@@ -1,311 +1,280 @@
 .box {
-    box-sizing: border-box; /* Opera/IE 8+ */
-    /* box-sizing est appliqué seulement à cette classe */
-  }
-  
-  * {
-    box-sizing: border-box;
-    /* box-sizing est appliqué à tous les éléments */
-  }
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  /* box-sizing est appliqué seulement à cette classe */
+}
 
-  /*CSS Projet Booki
+* {
+  box-sizing: border-box;
+  /* box-sizing est appliqué à tous les éléments */
+}
+
+/*CSS Projet Booki
     taille d'écran >992px */
 
-
 /*Base */
-body
-{
-    font-family: 'Raleway', sans-serif;
-    color: black;
+body {
+  font-family: "Raleway", sans-serif;
+  color: black;
 }
- 
-p
-  {
-    font-weight: 400;
-   }
-  
- #body-c                                                    /*conteneur à l'intérieur de body*/
-  {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
 
-  a
-  {
-    color: #000000;
-    text-decoration: none;
-  }
+p {
+  font-weight: 400;
+}
 
-h1,h2                                        
-  {
-   margin: 0;
-   font-size: 20px;
-   font-weight: 700;
-  }
+#body-c {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
+a {
+  color: #000000;
+  text-decoration: none;
+}
 
+h1,
+h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
 
 /*Header*/
 
-header 
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    font-size: 14px;
-    font-weight: 500;  
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 14px;
+  font-weight: 500;
 }
 
+#booki
 
-#booki /*Positionnement et dimensions du logo Booki*/
-{
-    width: 100px;
-    height: 50px;
-    margin-top: 40px;
-    margin-left: 60px;
+/*booki's logo set up*/
+  {
+  width: 100px;
+  height: 50px;
+  margin-top: 40px;
+  margin-left: 60px;
 }
 
-nav/*Positionnement du nav avec la mise en place du hover*/
- {
-    display: flex;
-    flex-direction: row;
-  }
+nav
 
- 
-
- nav a
- {
-    padding-top: 50px;
-    width: 160px;
-    text-align: center;
-    border-top:2px solid transparent ; /* Permet d'éviter le décalage lors a:hover*/
- }
-
- nav a:hover
- {                                        /*Réaction au passage de la souris sur les liens*/
-    color:#0065FC;
-    border-top: solid 2px #0065FC;
- }
-
-
-
- /*Main*/
-
-main
-{
-  margin:45px ;
+/*nav set up*/
+  {
+  display: flex;
+  flex-direction: row;
 }
 
+nav a {
+  padding-top: 50px;
+  width: 160px;
+  text-align: center;
+  border-top: 2px solid transparent;
+  /* a:hover correction*/
+}
+
+nav a:hover {
+  color: #0065fc;
+  border-top: solid 2px #0065fc;
+}
+
+/*Main*/
+
+main {
+  margin: 45px;
+}
 
 /*Barre de recherche */
-#research
-{
+#research {
   padding-left: 5px;
 }
 
-#searchbar
- {
+#searchbar {
   display: inline-flex;
   flex-direction: row;
   margin-top: 20px;
-  border: #F2F2F2 solid 1px;
+  border: #f2f2f2 solid 1px;
   border-radius: 12px;
   height: 53px;
   overflow: hidden;
   margin-left: 5px;
- }
+}
 
- #searchbar input                              /*Police de toute la barre de recherche */
- {
+#searchbar input
+
+/*fonts */
+  {
   font-weight: 700;
   font-size: 16px;
- }
+}
 
-#l-dot                                         /*icone de point de cartes */
- {
+#l-dot
+
+/*dot map icon */
+  {
   width: 55px;
   height: 55px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 5px;
- }
+}
 
- #location                                     /*Barre de recherche*/
- {
- 
-  border: #F2F2F2;
+#location
+
+/*search bar*/
+  {
+  border: #f2f2f2;
   padding-left: 20px;
   width: 225px;
- }
+}
 
- #button                                      /*bouton rechercher*/
- {
-  border: #0065FC;
+#button
+
+/*search button*/
+  {
+  border: #0065fc;
   color: white;
-  background-color: #0065FC;
+  background-color: #0065fc;
   width: 135px;
-  }
-                                              /*bouton loupe*/
- #ma_glass
- {
-display: none;
- }
+}
 
+/*magnifying glass button*/
+#ma_glass {
+  display: none;
+}
 
- /*Partie filtres*/
+/*filters part*/
 
- #c-filters                                   /*Conteneur de toute la partie filtres*/
- {
-  
+#c-filters {
   display: flex;
   flex-direction: row;
   margin-top: 30px;
   margin-left: 5px;
+}
 
-  }
-
- form .title,#c-bars
- {
-  font-size:17px ;
+form .title,
+#c-bars {
+  font-size: 17px;
   font-weight: 700;
- }
-  
- form .title
- {
-   margin-right: 30px;
- }
+}
 
- #c-bars                                     /*Conteneur de tous les filtres*/
- {
+form .title {
+  margin-right: 30px;
+}
+
+#c-bars
+
+/*filters contenair */
+  {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
- }
+}
 
-.filter_value
- {
+.filter_value {
   display: flex;
   position: relative;
   flex-direction: row;
 
   margin-right: 25px;
-  margin-bottom:15px ;
-  border:#F2F2F2 3px solid;
+  margin-bottom: 15px;
+  border: #f2f2f2 3px solid;
   border-radius: 30px;
   height: 48px;
   align-items: center;
   padding-right: 20px;
   border-left: none;
-  }
+}
 
-.filter_icon
-{
+.filter_icon {
   margin-right: 15px;
   padding: 16px;
   border-radius: 50%;
 }
 
+/*checkbox set up*/
 
- /*Mise en place de checkboxs pour les filtres*/
-
- .filter
- {
+.filter {
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 40px;
   width: 90%;
- }
+}
 
-  .filter_value:hover
- {
-  background: #0065FC;
+.filter_value:hover {
+  background: #0065fc;
   color: white;
- }
-
-
-
- /*Agrandissement et mise en transparence de la checkbox tout en ajoutant un effet pour signifier que la case est cochée*/
-
- .filter:checked ~ .filter_icon
- {
-  background-color:#0065FC  ;
-  color:white;
- }
-
- .filter:not(checked) ~ .filter_icon
- {
-  background-color:#DEEBFF ;
-  color: #0065FC;
- }
-
- 
- /*icone et phrase d'info*/
-#c-info
-{
- display: flex;
- flex-direction: row;
- align-items: center;
- margin: 10px 0 30px 3px;
- font-size: 15px;
 }
 
-#info-c
-{
- display: inline-flex;
- margin-right: 14px;
- color: #0065FC;
- background-color:white ;
- border-radius: 50%;
- border: 1px solid #F2F2F2 ;
- width: 23px;
- height:23px;
+/*checkboxes checked-effect  set up */
+
+.filter:checked~.filter_icon {
+  background-color: #0065fc;
+  color: white;
 }
 
-#c-info .fa-solid
-{
- margin: auto;
- font-size: 13px;
-
+.filter:not(checked)~.filter_icon {
+  background-color: #deebff;
+  color: #0065fc;
 }
 
+/*information section*/
+#c-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0 30px 3px;
+  font-size: 15px;
+}
 
-/*Article sur les hébergements*/
+#info-c {
+  display: inline-flex;
+  margin-right: 14px;
+  color: #0065fc;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #f2f2f2;
+  width: 23px;
+  height: 23px;
+}
 
-#lodging
-{
+#c-info .fa-solid {
+  margin: auto;
+  font-size: 13px;
+}
+
+/*lodging article*/
+
+#lodging {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
-  }
+}
 
+/*hotels section*/
 
-  /*Section Hébergements à Marseille */
-
-.cards-row
-{
+.cards-row {
   display: flex;
   justify-content: space-between;
 }
 
-.hotels
-{
+.hotels {
   display: flex;
   flex-basis: 65%;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 20px;
   justify-content: space-around;
   align-items: center;
   height: 625px;
-  
 }
 
-.hotels-c
-{
+.hotels-c {
   width: 90%;
   height: 86%;
   display: flex;
@@ -313,149 +282,126 @@ display: none;
   background-color: inherit;
   justify-content: space-between;
   margin-top: 0;
-}  
+}
 
-.hotels .cards-row
-{
+.hotels .cards-row {
   flex-direction: row;
 }
 
-
-.card                                                  /*Mise en forme des cartes*/
-{
+.card {
+  /*cards set up*/
   display: flex;
   background-color: white;
-  border: 1px solid #F2F2F2;
+  border: 1px solid #f2f2f2;
   position: relative;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 }
 
-.c-photo
-{
+.c-photo {
   display: inline-flex;
   overflow: hidden;
 }
 
-.description
-{
+.description {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding-left: 5%;
 }
 
-.inline_bold
-{
+.inline_bold {
   font-weight: bold;
 }
 
-.photo
-{
+.photo {
   object-fit: cover;
 }
 
-.xs_card
-{
+.xs_card {
   flex-direction: column;
-  height: 190px ;
+  height: 190px;
   flex-basis: 30%;
   padding: 5px;
 }
 
-
-
-.xs_photo
-{
+.xs_photo {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   flex-direction: column;
 }
 
-.xs_card .description
-{
+.xs_card .description {
   height: 37%;
 }
 
-.xs_photo .photo
-{
+.xs_photo .photo {
   height: 113px;
 }
 
-.name
-{
+.name {
   margin: 2px 0 6px 0;
   font-size: 15px;
   font-weight: 700;
   line-height: 14px;
 }
 
-.price
-{
-  margin:0;
+.price {
+  margin: 0;
   font-size: 13px;
 }
 
-/*Notation de la catégorie hébergement*/
+/*lodging rating*/
 
-.hotel_card1 .fa-solid:nth-child(-n+4)                              
-{
-  color: #0065FC;
-}
-.hotel_card1 .fa-solid:nth-child(5)
-{
-  color: #F2F2F2;
+.hotel_card1 .fa-solid:nth-child(-n + 4) {
+  color: #0065fc;
 }
 
-.hotel_card2 .fa-solid:nth-child(-n+5)
-{
-  color: #0065FC;
+.hotel_card1 .fa-solid:nth-child(5) {
+  color: #f2f2f2;
 }
 
-.hotel_card3 .fa-solid:nth-child(-n+4)
-{
-  color: #0065FC;
-}
-.hotel_card3 .fa-solid:nth-child(5)
-{
-  color: #F2F2F2;
+.hotel_card2 .fa-solid:nth-child(-n + 5) {
+  color: #0065fc;
 }
 
-.hotel_card4 .fa-solid:nth-child(-n+3)
-{
-  color: #0065FC;
-}
-.hotel_card4 .fa-solid:nth-child(4),.hotel_card4 .fa-solid:nth-child(5)
-{
-  color: #F2F2F2;
+.hotel_card3 .fa-solid:nth-child(-n + 4) {
+  color: #0065fc;
 }
 
-.hotel_card5 .fa-solid:nth-child(-n+4)
-{
-  color: #0065FC;
-}
-.hotel_card5 .fa-solid:nth-child(5)
-{
-  color: #F2F2F2;
+.hotel_card3 .fa-solid:nth-child(5) {
+  color: #f2f2f2;
 }
 
-.hotel_card6 .fa-solid:nth-child(-n+5)
-{
-  color: #0065FC;
+.hotel_card4 .fa-solid:nth-child(-n + 3) {
+  color: #0065fc;
 }
 
+.hotel_card4 .fa-solid:nth-child(4),
+.hotel_card4 .fa-solid:nth-child(5) {
+  color: #f2f2f2;
+}
 
+.hotel_card5 .fa-solid:nth-child(-n + 4) {
+  color: #0065fc;
+}
 
-/*Mise en place des liens*/
+.hotel_card5 .fa-solid:nth-child(5) {
+  color: #f2f2f2;
+}
 
-#more
-{
-  font-size:16px ;
+.hotel_card6 .fa-solid:nth-child(-n + 5) {
+  color: #0065fc;
+}
+
+/*link set up*/
+
+#more {
+  font-size: 16px;
   font-weight: 700;
 }
 
-.card_link
-{
+.card_link {
   position: absolute;
   left: 0;
   top: 0;
@@ -463,234 +409,203 @@ display: none;
   height: 100%;
 }
 
+/*Aside popular*/
 
-
-/*Aside populaire*/
-
-aside
-{
+aside {
   display: flex;
   flex-direction: column;
   flex-basis: 30%;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 20px;
   justify-content: space-around;
   align-items: center;
   height: 625px;
 }
 
-.popular-c
-{
- width: 80%;
- height: 90%;
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- position: relative;
- 
+.popular-c {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
 }
 
-aside .title
-{
+aside .title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.title .fa-solid                                           /*positionnement exact de l'étoile du titre */
-{
+.title .fa-solid
+
+/*title star position*/
+  {
   position: absolute;
   right: 0px;
-
 }
 
-.popular-c .cards-row                                      /*top 3 populaire*/
-{
+.popular-c .cards-row
+
+/*top 3 */
+  {
   flex-direction: column;
   flex-basis: 87%;
 }
 
-
-
-.s_card                                                   
-{
-  height: 145px ;
+.s_card {
+  height: 145px;
   padding: 5px;
 }
 
-.s_photo
- {
+.s_photo {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   flex-direction: row;
 }
-  
-  .s_photo .photo
-  {
-  
-    width: 126px;
-  }
 
-
-
-
-
-
-
-  /*Notation du top populaire */
-.hotel_card7 .fa-solid:nth-child(-n+5)                         /*card 1 du top 3*/
-  {
-    color: #0065FC;
-  }
-
-
-.hotel_card8 .fa-solid:nth-child(-n+4)                         /*card 2 du top 3*/  
-  {
-  color: #0065FC;
-  }
-.hotel_card8 .fa-solid:nth-child(5)
-{
-  color: #F2F2F2;
+.s_photo .photo {
+  width: 126px;
 }
 
-.hotel_card9 .fa-solid:nth-child(-n+4)                          /*card 3 du top 3*/
-{
-  color: #0065FC;
+/*Notation du top populaire */
+.hotel_card7 .fa-solid:nth-child(-n+5)
+
+/*card 1 top 3*/
+  {
+  color: #0065fc;
 }
-.hotel_card9 .fa-solid:nth-child(5)
-{
-  color: #F2F2F2;
+
+.hotel_card8 .fa-solid:nth-child(-n+4)
+
+/*card 2 top 3*/
+  {
+  color: #0065fc;
 }
 
+.hotel_card8 .fa-solid:nth-child(5) {
+  color: #f2f2f2;
+}
 
+.hotel_card9 .fa-solid:nth-child(-n+4)
 
-/*Article Activités*/
+/*card 3 top 3*/
+  {
+  color: #0065fc;
+}
 
-.activities-c
-{
+.hotel_card9 .fa-solid:nth-child(5) {
+  color: #f2f2f2;
+}
+
+/*Activities article*/
+
+.activities-c {
   padding-top: 65px;
   padding-bottom: 20px;
 }
 
-#activities h2
-{
+#activities h2 {
   padding-left: 3%;
   margin-bottom: 25px;
 }
 
-.c-cards-column
-{
+.c-cards-column {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.cards-section
-{
+.cards-section {
   display: flex;
   flex-direction: row;
   width: 48%;
   justify-content: space-between;
 }
 
-.cards-column                                    /*Mise en place des colonnes */
-{
+.cards-column
+
+/*column set up  */
+  {
   display: flex;
   justify-content: space-between;
   height: 450px;
   width: 46%;
 }
 
-.cc1, .cc2
-{
+.cc1,
+.cc2 {
   flex-direction: column;
 }
 
-.cc2r
-{
+.cc2r {
   flex-direction: column-reverse;
-} 
+}
 
-                                                   /*Mise en place des cartes activités*/
-#activities .card
-{
+/*activities card*/
+#activities .card {
   flex-direction: column;
 }
 
-.xl_card
-{
+.xl_card {
   flex-basis: 100%;
 }
 
-.l_card
-{
-  flex-basis:53% ;
+.l_card {
+  flex-basis: 53%;
 }
 
-.m_card
-{
-  flex-basis:37% ;
+.m_card {
+  flex-basis: 37%;
 }
 
-#activities .c-photo
-{
+#activities .c-photo {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   flex-direction: column;
 }
 
-
-.xl_photo .photo
-{
+.xl_photo .photo {
   height: 390px;
 }
 
-.l_photo .photo
-{
+.l_photo .photo {
   height: 180px;
 }
 
-.m_photo .photo
-{
+.m_photo .photo {
   height: 110px;
 }
 
-#activities .description
-{
- height: 55px;
+#activities .description {
+  height: 55px;
 }
-
-
 
 /*Footer*/
 
-footer
-{
-  background-color: #F2F2F2;
+footer {
+  background-color: #f2f2f2;
   height: 220px;
   display: flex;
   align-items: center;
 }
 
-.footer-c
-{
-  display:flex;
+.footer-c {
+  display: flex;
   width: 71%;
   height: 55%;
-  margin-left: 3% ;
+  margin-left: 3%;
   justify-content: space-between;
   margin-bottom: 50px;
 }
 
-.c-footer_links
-{
+.c-footer_links {
   display: flex;
   flex-direction: column;
 }
 
-footer ul
-{
+footer ul {
   padding-left: 0;
   list-style-type: none;
   font-size: 16px;
@@ -699,18 +614,7 @@ footer ul
   line-height: 28px;
 }
 
-h3
-{
+h3 {
   font-weight: 700;
   font-size: 18px;
 }
-
-
-
-
-
-
-
-
-
-

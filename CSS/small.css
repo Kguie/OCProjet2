@@ -3,74 +3,70 @@
 
 /*Header*/
 
-header 
-{
+header {
   flex-direction: column;
   align-items: center;
 }
 
-#booki /*Positionnement et dimensions du logo Booki*/
-{
-    margin-top: 30px;
-    margin-bottom: 45px;
-    margin-right: 20px;
+#booki
+
+/*booki's position*/
+  {
+  margin-top: 30px;
+  margin-bottom: 45px;
+  margin-right: 20px;
 
 }
 
-nav/*Positionnement du nav avec la mise en place du hover*/
-{
+nav
+
+/*nav */
+  {
   width: 100%;
 }
 
-nav a
-{
-  justify-content: center    ;
+nav a {
+  justify-content: center;
   display: flex;
   width: 50%;
   text-align: center;
-  border-bottom: solid 4px #F2F2F2 ;
+  border-bottom: solid 4px #F2F2F2;
   border-top: none;
   padding-top: 0;
-  padding-bottom: 20px ;
+  padding-bottom: 20px;
 }
 
-nav a:hover
-{
+nav a:hover {
   border-bottom: solid 4px #0065FC;
   border-top: none;
 }
 
 /*Main*/
 
-/*Barre de recherche */
+/*searchbar */
 
-#research
-{
+#research {
   padding-left: 0;
 }
 
-#searchbar
- {
+#searchbar {
   display: flex;
   margin-top: 35px;
   border: #F2F2F2 solid 1px;
   border-radius: 16px;
   width: 334px;
   margin-left: 0;
- }
+}
 
- #location
- {
+#location {
   width: auto;
- }
+}
 
-#button
- {
-display: none;
- }
+#button {
+  display: none;
+}
 
- #ma_glass
- {
+#ma_glass {
   display: block;
   border: #0065FC;
   background-color: #0065FC;
@@ -78,148 +74,130 @@ display: none;
   width: 52px;
   height: 52px;
   color: white;
-  position: absolute ;
+  position: absolute;
   left: 326px;
   align-self: center;
-  }
+}
 
 
-  /*filtres*/
-#c-fiters
-{
+/*filters*/
+#c-fiters {
   margin-left: 0;
 }
 
 
-/*changements hébergements*/
-#lodging
-{
+/*lodging*/
+#lodging {
   width: 100%;
   height: fit-content;
 }
 
-.hotels
-{
+.hotels {
   flex-basis: 1550px;
   flex-direction: column;
   border-radius: 0;
   background-color: white;
 }
 
-.hotels-c
-{
-  height:95% ;
+.hotels-c {
+  height: 95%;
   width: 90%;
   background-color: white;
   border-radius: 0;
 
 }
 
-.hotels .cards-row
-{
+.hotels .cards-row {
   flex-direction: column;
   flex-basis: 46%;
-  
+
 }
 
 
-.xs_card
-{
- flex-basis: 32%;
+.xs_card {
+  flex-basis: 32%;
 }
 
-.xs_photo .photo
-{
+.xs_photo .photo {
   height: 125px;
 }
 
 
 
-/*changements dans aside*/
+/*aside*/
 
-aside
-{
-flex-basis: 640px;
-border-radius: 0;
+aside {
+  flex-basis: 640px;
+  border-radius: 0;
 }
 
-.popular-c
-{
+.popular-c {
   width: 90%;
   height: 85%;
   justify-content: space-between;
 }
 
-.popular-c .cards-row
-{
+.popular-c .cards-row {
   flex-basis: 89%;
-  
+
 }
 
-.s_card
-{
+.s_card {
   flex-basis: 32%;
-  
+
 }
 
 
-/*Activités*/
+/*Activities*/
 
-.activities-c
-{
+.activities-c {
   padding-top: 25px;
   width: 90%;
   margin: 0 auto;
 }
 
-.c-cards-column
-{
+.c-cards-column {
   flex-direction: column;
   justify-content: space-around;
   height: 1400px;
 }
 
-.cards-section
-{
+.cards-section {
   flex-direction: column;
   flex-basis: 50%;
   justify-content: space-around;
-  margin-bottom:0
+  margin-bottom: 0
 }
 
-.cc1
-{
+.cc1 {
   flex-basis: 30%;
   width: 100%;
 }
 
-.cc2,.cc2r
-{
+.cc2,
+.cc2r {
   flex-basis: 66%;
   width: 100%;
   justify-content: space-around;
 }
 
-.l_card, .m_car
-{
-  flex-basis:45% ;
+.l_card,
+.m_car {
+  flex-basis: 45%;
 }
 
-#activities .photo
-{
-  height:150px;
+#activities .photo {
+  height: 150px;
 }
 
 
 /*footer*/
 
-footer
-{
+footer {
   height: 540px;
 }
 
-.footer-c
-{
+.footer-c {
   width: 100%;
   flex-direction: column;
   height: 78%;

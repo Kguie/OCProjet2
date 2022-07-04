@@ -2,64 +2,55 @@
   Ecran entre 768 et 992 px de largeur*/
 
 
-#body-c
-{
+#body-c {
   width: 100%;
 }
 
 /*Main*/
-main
-{
+main {
   width: 95%;
   margin: 0 auto;
 }
 
-#research
-{
-  margin:45px 5% 0 5% ;
+#research {
+  margin: 45px 5% 0 5%;
 }
 
-/*Partie filtres*/
-#c-filters
-{
- flex-direction: column;
+/*Filters section*/
+#c-filters {
+  flex-direction: column;
 }
 
 
-/*Changements sur la partie hébergements*/
+/*Lodging article*/
 
-#lodging
-{
+#lodging {
   flex-direction: column-reverse;
   height: 1300px;
 }
 
-.hotels
-{
- 
+.hotels {
+
   flex-basis: 48%;
-  
+
 }
 
-/*changements sur la partie Aside*/
+/* Aside section*/
 
-aside
-{
+aside {
 
   flex-basis: 48%;
 
 }
 
 
-/*Activités réagencement*/
+/*Activities*/
 
-.c-cards-column
-{
+.c-cards-column {
   flex-direction: column;
 }
 
-.cards-section
-{
+.cards-section {
   width: 100%;
   margin-bottom: 40px;
 }
@@ -67,7 +58,6 @@ aside
 
 /*Footer*/
 
-.footer-c
-{
+.footer-c {
   width: 86%;
 }
