@@ -8,26 +8,40 @@
     /* box-sizing est appliqué à tous les éléments */
   }
 
-/*Mise en forme */
+  /*CSS Projet Booki
+    taille d'écran >992px */
+
+
+/*Base */
 body
 {
     font-family: 'Raleway', sans-serif;
     color: black;
 }
-  p
+ 
+p
   {
     font-weight: 400;
-    font-size: 15px;
-  }
+   }
   
-  #c_page
+ #body-c                                                    /*conteneur à l'intérieur de body*/
   {
     max-width: 1440px;
     margin: 0 auto;
-
   }
 
+  a
+  {
+    color: #000000;
+    text-decoration: none;
+  }
 
+h1,h2                                        
+  {
+   margin: 0;
+   font-size: 20px;
+   font-weight: 700;
+  }
 
 
 
@@ -62,35 +76,33 @@ nav/*Positionnement du nav avec la mise en place du hover*/
 
  nav a
  {
-    color:black;
-    text-decoration: none;
-    justify-content: center    ;
-    display: flex;
     padding-top: 50px;
     width: 160px;
     text-align: center;
-    border-top:2px solid transparent ;
+    border-top:2px solid transparent ; /* Permet d'éviter le décalage lors a:hover*/
  }
 
  nav a:hover
- {
+ {                                        /*Réaction au passage de la souris sur les liens*/
     color:#0065FC;
     border-top: solid 2px #0065FC;
  }
 
+
+
  /*Main*/
+
 main
 {
   margin:45px ;
 }
- h1,h2
- {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 700;
- }
+
 
 /*Barre de recherche */
+#research
+{
+  padding-left: 5px;
+}
 
 #searchbar
  {
@@ -101,9 +113,16 @@ main
   border-radius: 12px;
   height: 53px;
   overflow: hidden;
+  margin-left: 5px;
  }
 
-#l-dot
+ #searchbar input                              /*Police de toute la barre de recherche */
+ {
+  font-weight: 700;
+  font-size: 16px;
+ }
+
+#l-dot                                         /*icone de point de cartes */
  {
   width: 55px;
   height: 55px;
@@ -114,25 +133,22 @@ main
   padding-bottom: 5px;
  }
 
- #location
+ #location                                     /*Barre de recherche*/
  {
-  font-weight: 700;
-  font-size: 16px;
+ 
   border: #F2F2F2;
   padding-left: 20px;
   width: 225px;
  }
 
- #button
+ #button                                      /*bouton rechercher*/
  {
-  font-weight: 700;
-  font-size: 16px;
   border: #0065FC;
   color: white;
   background-color: #0065FC;
   width: 135px;
   }
-
+                                              /*bouton loupe*/
  #ma_glass
  {
 display: none;
@@ -140,35 +156,41 @@ display: none;
 
 
  /*Partie filtres*/
- #c_filters
+
+ #c-filters                                   /*Conteneur de toute la partie filtres*/
  {
   
   display: flex;
   flex-direction: row;
   margin-top: 30px;
+  margin-left: 5px;
+
   }
 
- #c_bars
+ form .title,#c-bars
+ {
+  font-size:17px ;
+  font-weight: 700;
+ }
+  
+ form .title
+ {
+   margin-right: 30px;
+ }
+
+ #c-bars                                     /*Conteneur de tous les filtres*/
  {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
  }
 
- .title
- {
-  font-size:16px ;
-  font-weight: 700;
-  margin-right: 30px;
- }
-
-.f_choice
+.filter_value
  {
   display: flex;
   position: relative;
   flex-direction: row;
-  font-size:16px ;
-  font-weight: 700;
+
   margin-right: 25px;
   margin-bottom:15px ;
   border:#F2F2F2 3px solid;
@@ -179,7 +201,7 @@ display: none;
   border-left: none;
   }
 
-.icon
+.filter_icon
 {
   margin-right: 15px;
   padding: 16px;
@@ -198,7 +220,7 @@ display: none;
   width: 90%;
  }
 
-  .f_choice:hover
+  .filter_value:hover
  {
   background: #0065FC;
   color: white;
@@ -208,13 +230,13 @@ display: none;
 
  /*Agrandissement et mise en transparence de la checkbox tout en ajoutant un effet pour signifier que la case est cochée*/
 
- .filter:checked ~ .icon
+ .filter:checked ~ .filter_icon
  {
   background-color:#0065FC  ;
   color:white;
  }
 
- .filter:not(checked) ~ .icon
+ .filter:not(checked) ~ .filter_icon
  {
   background-color:#DEEBFF ;
   color: #0065FC;
@@ -222,15 +244,16 @@ display: none;
 
  
  /*icone et phrase d'info*/
-#c_info
+#c-info
 {
  display: flex;
  flex-direction: row;
  align-items: center;
- margin: 10px 0 30px 0px;
+ margin: 10px 0 30px 3px;
+ font-size: 15px;
 }
 
-#info
+#info-c
 {
  display: inline-flex;
  margin-right: 14px;
@@ -242,7 +265,7 @@ display: none;
  height:23px;
 }
 
-#c_info .fa-solid
+#c-info .fa-solid
 {
  margin: auto;
  font-size: 13px;
@@ -250,11 +273,7 @@ display: none;
 }
 
 
-
 /*Article sur les hébergements*/
-
-
-
 
 #Hébergements
 {
@@ -266,6 +285,12 @@ display: none;
 
 
   /*Section Hébergements à Marseille */
+
+.cards-row
+{
+  display: flex;
+  justify-content: space-between;
+}
 
 .hotels
 {
@@ -279,7 +304,7 @@ display: none;
   
 }
 
-.cont_card
+.hotels-c
 {
   width: 90%;
   height: 86%;
@@ -290,116 +315,124 @@ display: none;
   margin-top: 0;
 }  
 
-.hotels .box-row
+.hotels .cards-row
 {
-  display: flex;
   flex-direction: row;
-  justify-content: space-between;
-
 }
 
-.s_card
+
+.card                                                  /*Mise en forme des cartes*/
 {
   display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  height: 190px ;
-  flex-basis: 30%;
   background-color: white;
-  justify-content: space-between;
   border: 1px solid #F2F2F2;
   position: relative;
-  padding: 5px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-
-.c_scpic
-{
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  border-radius: 20px;
 }
 
-.s_card .description
+.c-photo
 {
-  display:flex;
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.description
+{
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 37%;
   padding-left: 5%;
 }
 
-.c_scpic .photo
+.photo
+{object-fit: cover;}
+
+.xs_card
 {
-  object-fit: cover;
-  height: 113px;
+  flex-direction: column;
+  height: 190px ;
+  flex-basis: 30%;
+  padding: 5px;
 }
 
-.nameandprice
+
+
+.xs_photo
 {
- line-height: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  flex-direction: column;
+}
+
+.xs_card .description
+{
+  height: 37%;
+}
+
+.xs_photo .photo
+{
+  height: 113px;
 }
 
 .name
 {
-  margin: 0;
+  margin: 2px 0 6px 0;
   font-size: 15px;
   font-weight: 700;
-  line-height: 16px;
+  line-height: 14px;
 }
 
 .price
 {
-  margin: 0;
-
+  margin:0;
+  font-size: 13px;
 }
 
 /*Notation de la catégorie hébergement*/
 
-.boxh1 .fa-solid:nth-child(-n+4)
+.hotel_card1 .fa-solid:nth-child(-n+4)
 {
   color: #0065FC;
 }
-.boxh1 .fa-solid:nth-child(5)
+.hotel_card1 .fa-solid:nth-child(5)
 {
   color: #F2F2F2;
 }
 
-.boxh2 .fa-solid:nth-child(-n+5)
+.hotel_card2 .fa-solid:nth-child(-n+5)
 {
   color: #0065FC;
 }
 
-.boxh3 .fa-solid:nth-child(-n+4)
+.hotel_card3 .fa-solid:nth-child(-n+4)
 {
   color: #0065FC;
 }
-.boxh3 .fa-solid:nth-child(5)
+.hotel_card3 .fa-solid:nth-child(5)
 {
   color: #F2F2F2;
 }
 
-.boxh4 .fa-solid:nth-child(-n+3)
+.hotel_card4 .fa-solid:nth-child(-n+3)
 {
   color: #0065FC;
 }
-.boxh4 .fa-solid:nth-child(4),.boxh4 .fa-solid:nth-child(5)
+.hotel_card4 .fa-solid:nth-child(4),.hotel_card4 .fa-solid:nth-child(5)
 {
   color: #F2F2F2;
 }
 
-.boxh5 .fa-solid:nth-child(-n+4)
+.hotel_card5 .fa-solid:nth-child(-n+4)
 {
   color: #0065FC;
 }
-.boxh5 .fa-solid:nth-child(5)
+.hotel_card5 .fa-solid:nth-child(5)
 {
   color: #F2F2F2;
 }
 
-.boxh6 .fa-solid:nth-child(-n+5)
+.hotel_card6 .fa-solid:nth-child(-n+5)
 {
   color: #0065FC;
 }
@@ -410,13 +443,11 @@ display: none;
 
 #more
 {
-  color: black;
-  text-decoration: none;
   font-size:16px ;
   font-weight: 700;
 }
 
-.c_link
+.card_link
 {
   position: absolute;
   left: 0;
@@ -441,7 +472,7 @@ aside
   height: 625px;
 }
 
-.c_aside
+.popular-c
 {
  width: 80%;
  height: 90%;
@@ -460,51 +491,41 @@ aside .title
   align-items: center;
 }
 
-.title .fa-solid
+.title .fa-solid                                           /*positionnement exact de l'étoile du titre */
 {
   position: absolute;
   right: 0px;
 
 }
 
-.c_aside .box-row
+.popular-c .cards-row                                      /*top 3 populaire*/
 {
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
   flex-basis: 87%;
 }
 
-.m_card
-{
-  display: flex;
-  border-radius: 20px;
-  height: 145px ;
-  width: 100%;
-  background-color: white;
-  border: 1px solid #F2F2F2;
-  position: relative;
-  padding: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
 
-  .c_mcpic
-  {
-  display: inline-flex;
+
+.s_card                                                   
+{
+  height: 145px ;
+  padding: 5px;
+}
+
+.s_photo
+ {
   flex-direction: row;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  overflow: hidden;
-
-  }
+}
   
-  .c_mcpic .photo
+  .s_photo .photo
   {
     object-fit: cover;
     width: 126px;
   }
 
-  .m_card .description
+  .s_card .description
 {
   display:flex;
   flex-direction: column;
@@ -517,26 +538,26 @@ aside .title
 
 
   /*Notation du top populaire */
-.boxh7 .fa-solid:nth-child(-n+5)
+.hotel_card7 .fa-solid:nth-child(-n+5)
   {
     color: #0065FC;
   }
 
 
-.boxh8 .fa-solid:nth-child(-n+4)
+.hotel_card8 .fa-solid:nth-child(-n+4)
   {
   color: #0065FC;
   }
-.boxh8 .fa-solid:nth-child(5)
+.hotel_card8 .fa-solid:nth-child(5)
 {
   color: #F2F2F2;
 }
 
-.boxh9 .fa-solid:nth-child(-n+4)
+.hotel_card9 .fa-solid:nth-child(-n+4)
 {
   color: #0065FC;
 }
-.boxh9 .fa-solid:nth-child(5)
+.hotel_card9 .fa-solid:nth-child(5)
 {
   color: #F2F2F2;
 }
@@ -545,49 +566,8 @@ aside .title
 
 /*Article Activités*/
 
-#Activités
-{
-  display: flex;
-  flex-direction: column;
-}
 
-.c_activities
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin:0 auto ;
-  width: 100%;
-}
 
-.c_columnbox
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.box-column
-{
- display: flex;
-  justify-content: space-between;
-  flex-basis: 22%;
-  height: 80%;
-  background-color: red;
-}
-
-.x1
-{
- 
- 
-}
-
-.l .c_apic
-{
-  background-color: blue;
-  height: 445px;
-  
-}
 
 
 
