@@ -10,7 +10,8 @@
 /*Main*/
 main
 {
-  margin: 0;
+  width: 95%;
+  margin: 0 auto;
 }
 
 #research
@@ -30,14 +31,8 @@ main
 #Hébergements
 {
   flex-direction: column-reverse;
-  width: 95%;
-  margin: 0 auto;
   height: 1300px;
-
-  
 }
-
-
 
 .hotels
 {
@@ -55,3 +50,24 @@ aside
 
 }
 
+
+/*Activités réagencement*/
+
+.c-cards-column
+{
+  flex-direction: column;
+}
+
+.cards-section
+{
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+
+/*Footer*/
+
+.footer-c
+{
+  width: 86%;
+}

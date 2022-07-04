@@ -1,3 +1,6 @@
+/*projet Booki
+ Ecran inférieur à 768px */
+
 /*Header*/
 
 header 
@@ -159,3 +162,67 @@ border-radius: 0;
   
 }
 
+
+/*Activités*/
+
+.activities-c
+{
+  padding-top: 25px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.c-cards-column
+{
+  flex-direction: column;
+  justify-content: space-around;
+  height: 1400px;
+}
+
+.cards-section
+{
+  flex-direction: column;
+  flex-basis: 50%;
+  justify-content: space-around;
+  margin-bottom:0
+}
+
+.cc1
+{
+  flex-basis: 30%;
+  width: 100%;
+}
+
+.cc2,.cc2r
+{
+  flex-basis: 66%;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.l_card, .m_car
+{
+  flex-basis:45% ;
+}
+
+#Activités .photo
+{
+  height:150px;
+}
+
+
+/*footer*/
+
+footer
+{
+  height: 540px;
+}
+
+.footer-c
+{
+  width: 100%;
+  flex-direction: column;
+  height: 78%;
+  margin-top: 8%;
+  margin-left: 8%;
+}
