@@ -191,10 +191,19 @@ form .title {
   border-left: none;
 }
 
-.filter_icon {
+form .fa-solid {
   margin-right: 15px;
-  padding: 16px;
   border-radius: 50%;
+}
+
+.fa-money-bill-wave,.fa-heart,.fa-dog
+{
+  padding: 16px;
+}
+
+.fa-child-reaching
+{
+  padding: 23px 16px 23px 16px;
 }
 
 /*checkbox set up*/
@@ -214,12 +223,44 @@ form .title {
 
 /*checkboxes checked-effect  set up */
 
-.filter:checked~.filter_icon {
+#economique:checked~.fa-money-bill-wave {
   background-color: #0065fc;
   color: white;
 }
 
-.filter:not(checked)~.filter_icon {
+#economique:not(:checked)~.fa-money-bill-wave {
+  background-color: #deebff;
+  color: #0065fc;
+}
+
+#familial:checked~.fa-child-reaching {
+  background-color: #0065fc;
+  color: white;
+}
+
+#familial:not(:checked)~.fa-child-reaching {
+  background-color: #deebff;
+  color: #0065fc;
+}
+
+
+#Romantique:checked~.fa-heart {
+  background-color: #0065fc;
+  color: white;
+}
+
+#Romantique:not(:checked)~.fa-heart {
+  background-color: #deebff;
+  color: #0065fc;
+}
+
+
+#Animaux:checked~.fa-dog {
+  background-color: #0065fc;
+  color: white;
+}
+
+#Animaux:not(:checked)~.fa-dog {
   background-color: #deebff;
   color: #0065fc;
 }
