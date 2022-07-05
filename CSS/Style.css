@@ -10,7 +10,7 @@
 }
 
 /*CSS Projet Booki
-    taille d'écran >992px */
+    width >992px */
 
 /*Base */
 body {
@@ -87,7 +87,7 @@ main {
   margin: 45px;
 }
 
-/*Barre de recherche */
+/*searchbar */
 #research {
   padding-left: 5px;
 }
