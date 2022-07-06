@@ -41,6 +41,11 @@ aside {
 
   flex-basis: 48%;
 
+} 
+
+aside .title
+{
+  padding-top: 0;
 }
 
 

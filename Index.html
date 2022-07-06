@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap");
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css " />
   <link rel="stylesheet" type="text/css" href="CSS/normalize.css" />
@@ -29,15 +29,15 @@
     <main>
       <article id="research">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
+        <p class="subhead">En plein centre ville ou en pleine nature</p>
 
         <!--research form section-->
         <form id="searchbar" method="post" action="http://traitement.php">
-          <div id="l-dot"><i class="fa-solid fa-location-dot fa-lg"></i></div>
+          <span class="research_icons l-dot"><i class="fa-solid fa-location-dot fa-lg"></i></span>
           <input type="search" id="location" value="Marseille,France" name="location" />
           <input id="button" type="submit" value="Rechercher" />
           <button type="button" id="ma_glass">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <span class="research_icons"><i class="fa-solid fa-magnifying-glass"></i></span>
           </button>
         </form>
 
@@ -45,30 +45,30 @@
         <!--filter form section-->
         <form id="c-filters" method="post" action="http://traitement.php">
           <p class="title">Filtres</p>
-          <div id="c-bars"><label class="filter_value" for="economique">
-              <input class="filter" type="checkbox" name="economique" id="economique"/>
+          <div id="c-bars"><label class="filter_value" for="economic">
+              <input class="filter" type="checkbox" name="economic" id="economic"/>
               <i class="fa-solid fa-money-bill-wave"></i>
               &#201;conomique
             </label>
-            <label class="filter_value" for="familial">
-              <input class="filter" type="checkbox" name="familial" id="familial"/>
+            <label class="filter_value" for="family">
+              <input class="filter" type="checkbox" name="family" id="family"/>
               <i class="fa-solid fa-child-reaching fa-lg"></i>
               Familial
             </label>
-            <label class="filter_value" for="Romantique" >
-              <input class="filter" type="checkbox" name="Romantique" id="Romantique"/>
+            <label class="filter_value" for="romantic" >
+              <input class="filter" type="checkbox" name="romantic" id="romantic"/>
               <i class="fa-solid fa-heart"></i>
               Romantique
             </label>
-            <label class="filter_value" for="Animaux">
-              <input class="filter" type="checkbox" name="Animaux" id="Animaux"/>
+            <label class="filter_value" for="animals">
+              <input class="filter" type="checkbox" name="animals" id="animals"/>
               <i class="fa-solid fa-dog"></i>
               Animaux autorisés
             </label>
           </div>
         </form>
         <div id="c-info">
-          <div id="info-c"><i class="fa-solid fa-info"></i></div>
+           <div id="info-c"><i class="fa-solid fa-info"></i></div>
           <p>
             Plus de 500 logements sont disponibles dans cette ville
           </p>
@@ -299,7 +299,7 @@
                 </div>
               </div>
               <div class="cards-column cc2">
-                <div class="card l_card">
+                <div class="card l_card lc1">
                   <a href="#" class="card_link"></a>
                   <div class="c-photo l_photo">
                     <img class="photo" src="images/activites/fortdepomegues.jpg" alt="Fort de Pomègues" />
@@ -308,7 +308,7 @@
                     <p class="name">Fort de Pomègues</p>
                   </div>
                 </div>
-                <div class="card m_card">
+                <div class="card m_card mc1">
                   <a href="#" class="card_link"></a>
                   <div class="c-photo m_photo">
                     <img class="photo" src="images/activites/ilesdufrioul.jpg" alt="Îles du Frioul" />
@@ -332,23 +332,23 @@
                   </div>
                 </div>
               </div>
-              <div class="cards-column cc2r">
-                <div class="card l_card">
+              <div class="cards-column cc2">
+                <div class="card m_card mc2">
                   <a href="#" class="card_link"></a>
-                  <div class="c-photo l_photo">
-                    <img class="photo" src="images/activites/parclongchamp.jpg" alt="Parc Longchamp" />
-                  </div>
-                  <div class="description">
-                    <p class="name">Parc Longchamp</p>
-                  </div>
-                </div>
-                <div class="card m_card">
-                  <a href="#" class="card_link"></a>
-                  <div class="c-photo m_photo">
+                  <div class="c-photo m2_photo">
                     <img class="photo" src="images/activites/notredamedelagarde.jpg" alt="Notre-Dame-de-la-Garde">
                   </div>
                   <div class="description">
                     <p class="name">Notre-Dame-de-la-Garde</p>
+                  </div>
+                  </div>
+                <div class="card l_card lc2">
+                  <a href="#" class="card_link"></a>
+                  <div class="c-photo l2_photo">
+                    <img class="photo" src="images/activites/parclongchamp.jpg" alt="Parc Longchamp" />
+                  </div>
+                  <div class="description">
+                    <p class="name">Parc Longchamp</p>
                   </div>
                 </div>
               </div>

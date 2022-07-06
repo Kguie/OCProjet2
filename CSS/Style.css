@@ -35,7 +35,7 @@ a {
 h1,
 h2 {
   margin: 0;
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 700;
 }
 
@@ -46,7 +46,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -60,10 +60,9 @@ header {
   margin-left: 60px;
 }
 
-nav
-
 /*nav set up*/
-  {
+nav
+{
   display: flex;
   flex-direction: row;
 }
@@ -73,9 +72,9 @@ nav a {
   width: 160px;
   text-align: center;
   border-top: 2px solid transparent;
-  /* a:hover correction*/
 }
 
+/* a:hover moving correction*/
 nav a:hover {
   color: #0065fc;
   border-top: solid 2px #0065fc;
@@ -84,12 +83,18 @@ nav a:hover {
 /*Main*/
 
 main {
-  margin: 45px;
+  margin: 30px auto 45px auto;
+  width: 93%;
 }
 
 /*searchbar */
 #research {
   padding-left: 5px;
+}
+
+.subhead{
+  margin-top: 9px;
+  margin-bottom: 0;
 }
 
 #searchbar {
@@ -100,7 +105,7 @@ main {
   border-radius: 12px;
   height: 53px;
   overflow: hidden;
-  margin-left: 5px;
+  margin-left: 0;
 }
 
 #searchbar input
@@ -108,13 +113,12 @@ main {
 /*fonts */
   {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
 }
 
-#l-dot
-
 /*dot map icon */
-  {
+.l-dot
+{
   width: 55px;
   height: 55px;
   background-color: #f2f2f2;
@@ -122,6 +126,7 @@ main {
   align-items: center;
   justify-content: center;
   padding-bottom: 5px;
+  padding-left: 15px;
 }
 
 #location
@@ -130,7 +135,7 @@ main {
   {
   border: #f2f2f2;
   padding-left: 20px;
-  width: 225px;
+  width: 235px;
 }
 
 #button
@@ -154,12 +159,12 @@ main {
   display: flex;
   flex-direction: row;
   margin-top: 30px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 form .title,
 #c-bars {
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 700;
 }
 
@@ -167,9 +172,9 @@ form .title {
   margin-right: 30px;
 }
 
-#c-bars
 
-/*filters contenair */
+/*filters container */
+#c-bars
   {
   display: flex;
   flex-direction: row;
@@ -180,10 +185,9 @@ form .title {
   display: flex;
   position: relative;
   flex-direction: row;
-
   margin-right: 25px;
   margin-bottom: 15px;
-  border: #f2f2f2 3px solid;
+  border: #D9D9D9 2px solid;
   border-radius: 30px;
   height: 48px;
   align-items: center;
@@ -194,6 +198,7 @@ form .title {
 form .fa-solid {
   margin-right: 15px;
   border-radius: 50%;
+  font-size: 20px;
 }
 
 .fa-money-bill-wave,.fa-heart,.fa-dog
@@ -203,7 +208,7 @@ form .fa-solid {
 
 .fa-child-reaching
 {
-  padding: 23px 16px 23px 16px;
+  padding: 25px 18px 25px 18px;
 }
 
 /*checkbox set up*/
@@ -223,44 +228,44 @@ form .fa-solid {
 
 /*checkboxes checked-effect  set up */
 
-#economique:checked~.fa-money-bill-wave {
+#economic:checked~.fa-money-bill-wave {
   background-color: #0065fc;
   color: white;
 }
 
-#economique:not(:checked)~.fa-money-bill-wave {
+#economic:not(:checked)~.fa-money-bill-wave {
   background-color: #deebff;
   color: #0065fc;
 }
 
-#familial:checked~.fa-child-reaching {
+#family:checked~.fa-child-reaching {
   background-color: #0065fc;
   color: white;
 }
 
-#familial:not(:checked)~.fa-child-reaching {
-  background-color: #deebff;
-  color: #0065fc;
-}
-
-
-#Romantique:checked~.fa-heart {
-  background-color: #0065fc;
-  color: white;
-}
-
-#Romantique:not(:checked)~.fa-heart {
+#family:not(:checked)~.fa-child-reaching {
   background-color: #deebff;
   color: #0065fc;
 }
 
 
-#Animaux:checked~.fa-dog {
+#romantic:checked~.fa-heart {
   background-color: #0065fc;
   color: white;
 }
 
-#Animaux:not(:checked)~.fa-dog {
+#romantic:not(:checked)~.fa-heart {
+  background-color: #deebff;
+  color: #0065fc;
+}
+
+
+#animals:checked~.fa-dog {
+  background-color: #0065fc;
+  color: white;
+}
+
+#animals:not(:checked)~.fa-dog {
   background-color: #deebff;
   color: #0065fc;
 }
@@ -270,8 +275,8 @@ form .fa-solid {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 10px 0 30px 3px;
-  font-size: 15px;
+  margin: 10px 0 25px 7px;
+ 
 }
 
 #info-c {
@@ -280,14 +285,15 @@ form .fa-solid {
   color: #0065fc;
   background-color: white;
   border-radius: 50%;
-  border: 1px solid #f2f2f2;
+  border: 1px solid #d9d9d9;
   width: 23px;
   height: 23px;
+  padding-bottom: 2px;
 }
 
 #c-info .fa-solid {
   margin: auto;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 /*lodging article*/
@@ -381,10 +387,14 @@ form .fa-solid {
 }
 
 .name {
-  margin: 2px 0 6px 0;
-  font-size: 15px;
   font-weight: 700;
   line-height: 14px;
+}
+
+#lodging .name
+{
+  margin: 5px 0 6px 0;
+  font-size: 14px;
 }
 
 .price {
@@ -399,7 +409,7 @@ form .fa-solid {
 }
 
 .hotel_card1 .fa-solid:nth-child(5) {
-  color: #f2f2f2;
+  color: #d9d9d9;
 }
 
 .hotel_card2 .fa-solid:nth-child(-n + 5) {
@@ -411,7 +421,7 @@ form .fa-solid {
 }
 
 .hotel_card3 .fa-solid:nth-child(5) {
-  color: #f2f2f2;
+  color: #d9d9d9;
 }
 
 .hotel_card4 .fa-solid:nth-child(-n + 3) {
@@ -420,7 +430,7 @@ form .fa-solid {
 
 .hotel_card4 .fa-solid:nth-child(4),
 .hotel_card4 .fa-solid:nth-child(5) {
-  color: #f2f2f2;
+  color: #d9d9d9;
 }
 
 .hotel_card5 .fa-solid:nth-child(-n + 4) {
@@ -428,7 +438,7 @@ form .fa-solid {
 }
 
 .hotel_card5 .fa-solid:nth-child(5) {
-  color: #f2f2f2;
+  color: #d9d9d9;
 }
 
 .hotel_card6 .fa-solid:nth-child(-n + 5) {
@@ -440,6 +450,7 @@ form .fa-solid {
 #more {
   font-size: 16px;
   font-weight: 700;
+  padding-left: 3px;
 }
 
 .card_link {
@@ -477,6 +488,7 @@ aside .title {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-top: 10px;
 }
 
 .title .fa-solid
@@ -526,7 +538,7 @@ aside .title {
 }
 
 .hotel_card8 .fa-solid:nth-child(5) {
-  color: #f2f2f2;
+  color: #d9d9d9;
 }
 
 .hotel_card9 .fa-solid:nth-child(-n+4)
@@ -537,18 +549,17 @@ aside .title {
 }
 
 .hotel_card9 .fa-solid:nth-child(5) {
-  color: #f2f2f2;
+  color: #d9d9d9;
 }
 
 /*Activities article*/
 
 .activities-c {
-  padding-top: 65px;
-  padding-bottom: 20px;
+  padding-top: 55px;
+  padding-bottom: 10px;
 }
 
 #activities h2 {
-  padding-left: 3%;
   margin-bottom: 25px;
 }
 
@@ -580,9 +591,7 @@ aside .title {
   flex-direction: column;
 }
 
-.cc2r {
-  flex-direction: column-reverse;
-}
+
 
 /*activities card*/
 #activities .card {
@@ -593,12 +602,22 @@ aside .title {
   flex-basis: 100%;
 }
 
-.l_card {
+.lc1 {
   flex-basis: 53%;
 }
 
-.m_card {
+.mc1 {
   flex-basis: 37%;
+}
+
+.lc2
+{
+  flex-basis: 47% ;
+}
+
+.mc2
+{
+  flex-basis:44% ;
 }
 
 #activities .c-photo {
@@ -619,8 +638,22 @@ aside .title {
   height: 110px;
 }
 
-#activities .description {
+.l2_photo .photo {
+  height: 152px;
+}
+
+.m2_photo .photo {
+  height: 140px;
+}
+
+
+.cc2 .description {
   height: 55px;
+}
+
+.cc1 .description
+{
+  height:60px
 }
 
 /*Footer*/
@@ -638,7 +671,7 @@ footer {
   height: 55%;
   margin-left: 3%;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .c-footer_links {
