@@ -6,14 +6,16 @@
 header {
   flex-direction: column;
   align-items: center;
+  font-size: 17px;
 }
 
-#booki
 
 /*booki's position*/
+
+#booki
   {
   margin-top: 30px;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   margin-right: 20px;
 
 }
@@ -30,23 +32,29 @@ nav a {
   display: flex;
   width: 50%;
   text-align: center;
-  border-bottom: solid 4px #F2F2F2;
+  border-bottom: solid 2px #F2F2F2;
   border-top: none;
   padding-top: 0;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 nav a:hover {
-  border-bottom: solid 4px #0065FC;
+  border-bottom: solid 2px #0065FC;
   border-top: none;
 }
 
 /*Main*/
+main
+{
+  margin-top: 35px;
+}
 
-/*searchbar */
+/*research article */
 
 #research {
   padding-left: 0;
+  margin: 0 auto;
+  width: 90%;
 }
 
 #searchbar {
@@ -56,6 +64,7 @@ nav a:hover {
   border-radius: 16px;
   width: 334px;
   margin-left: 0;
+  margin-bottom: 0;
 }
 
 #location {
@@ -66,7 +75,7 @@ nav a:hover {
   display: none;
 }
 
-#ma_glass {
+#ma-glass {
   display: block;
   border: #0065FC;
   background-color: #0065FC;
@@ -77,12 +86,17 @@ nav a:hover {
   position: absolute;
   left: 326px;
   align-self: center;
+  padding-left: 15px;
 }
 
 
 /*filters*/
 #c-fiters {
-  margin-left: 0;
+  width: 100%;
+ }
+
+form .title {
+  margin-top: 0px;
 }
 
 
@@ -114,11 +128,11 @@ nav a:hover {
 }
 
 
-.xs_card {
+.xs-card {
   flex-basis: 32%;
 }
 
-.xs_photo .photo {
+.xs-photo .photo {
   height: 125px;
 }
 
@@ -142,7 +156,7 @@ aside {
 
 }
 
-.s_card {
+.s-card {
   flex-basis: 32%;
 
 }
@@ -181,8 +195,8 @@ aside {
   justify-content: space-around;
 }
 
-.l_card,
-.m_car {
+.l-card,
+.m-car {
   flex-basis: 45%;
 }
 
