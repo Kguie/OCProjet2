@@ -44,12 +44,21 @@ nav a:hover {
 }
 
 /*Main*/
+
+h1, h2
+{
+  font-size:24px;
+}
+
 main
 {
   margin-top: 35px;
+  width: 100%;
 }
 
-/*research article */
+/*research article */ 
+
+
 
 #research {
   padding-left: 0;
@@ -91,6 +100,7 @@ main
 
 
 /*filters*/
+
 #c-fiters {
   width: 100%;
  }
@@ -99,41 +109,77 @@ form .title {
   margin-top: 0px;
 }
 
+#c-info {
+  margin-left: 0;
+}
+
+
 
 /*lodging*/
+
 #lodging {
   width: 100%;
   height: fit-content;
 }
 
 .hotels {
-  flex-basis: 1550px;
+  flex-basis: 1530px;
   flex-direction: column;
   border-radius: 0;
   background-color: white;
+  padding-top: 30px;
 }
 
 .hotels-c {
-  height: 95%;
+  height: 1490px;
   width: 90%;
   background-color: white;
   border-radius: 0;
-
+  
 }
+
+.c-cards-row
+{
+  height: 1390px ;
+  justify-content: space-around;
+}
+
 
 .hotels .cards-row {
   flex-direction: column;
-  flex-basis: 46%;
+  flex-basis: 49%;
 
 }
 
 
 .xs-card {
-  flex-basis: 32%;
+  flex-basis: 220px;
 }
 
 .xs-photo .photo {
   height: 125px;
+}
+
+.hotels .description
+{
+  height: 80px;
+  padding-top: 5px;
+}
+
+#lodging .name
+{
+  margin: 0px 0px 9px 0;
+  line-height: 17px;
+}
+
+.price {
+  margin: 0;
+  font-size: 15px;
+}
+
+#more
+{
+  font-size: 20px;
 }
 
 
@@ -143,31 +189,62 @@ form .title {
 aside {
   flex-basis: 640px;
   border-radius: 0;
+  padding-top: 0;
 }
 
 .popular-c {
   width: 90%;
-  height: 85%;
   justify-content: space-between;
+  height: 88%;
+  margin: 0 auto;
+}
+
+aside .name
+{
+  margin-bottom:10px ;
+  font-size: 18px;
+}
+
+aside .description
+{
+  flex-basis: 61%;
+  justify-content: space-between;
+  padding: 15px 6px 10px 15px;  
 }
 
 .popular-c .cards-row {
-  flex-basis: 89%;
-
+  flex-basis: 505px;
+  
 }
 
 .s-card {
-  flex-basis: 32%;
+  flex-basis: 158px;
 
 }
 
+.s-photo
+{
+  flex-basis: 39%;
+}
 
-/*Activities*/
+.s-photo .photo
+{
+  width: 100%;
+}
+
+
+
+/*Activities*/ 
+#activities
+{
+   height: 1540px;
+}
 
 .activities-c {
-  padding-top: 25px;
+   padding-top: 55px;
   width: 90%;
-  margin: 0 auto;
+  margin: 0px auto 0 auto ;
+  height: auto;
 }
 
 .c-cards-column {
@@ -201,7 +278,13 @@ aside {
 }
 
 #activities .photo {
-  height: 150px;
+  height: 146px;
+}
+
+#activities .description
+{
+  font-size: 17px;
+  height: 60px;
 }
 
 
@@ -209,12 +292,24 @@ aside {
 
 footer {
   height: 540px;
+  justify-content: space-around;
 }
 
 .footer-c {
   width: 100%;
   flex-direction: column;
-  height: 78%;
-  margin-top: 8%;
-  margin-left: 8%;
+  height: 430px;
+  
+  margin-left: 35px;
+}
+
+footer ul
+{
+  font-size: 17px;
+}
+
+
+h3
+{
+  font-size:20px ;
 }
