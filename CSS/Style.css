@@ -370,6 +370,11 @@ form .fa-solid {
   overflow: hidden;
 }
 
+.photo
+{
+  object-fit: cover;
+}
+
 .description {
   display: flex;
   flex-direction: column;
@@ -383,10 +388,6 @@ form .fa-solid {
 
 .inline-bold {
   font-weight: bold;
-}
-
-.photo {
-  object-fit: cover;
 }
 
 .xs-card {
@@ -486,6 +487,7 @@ form .fa-solid {
   top: 0;
   width: 98%;
   height: 100%;
+  z-index: 2;
 }
 
 
@@ -626,24 +628,19 @@ aside .name
   justify-content: space-between;
 }
 
-.cards-column
-
 /*column set up  */
+.cards-column
   {
   display: flex;
   justify-content: space-between;
   height: 450px;
   width: 46%;
-}
-
-.cc1,
-.cc2 {
   flex-direction: column;
 }
 
 
-
 /*activities card*/
+
 #activities .card {
   flex-direction: column;
 }
@@ -670,32 +667,78 @@ aside .name
   flex-basis:44% ;
 }
 
+/*photo part*/
+
 #activities .c-photo {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   flex-direction: column;
+  overflow: hidden;
+  position: relative;
 }
 
-.xl-photo .photo {
+.xl-photo  {
   height: 390px;
   
 }
 
-.l-photo .photo {
+.l-photo  {
   height: 180px;
 }
 
-.m-photo .photo {
+.m-photo  {
   height: 110px;
 }
 
-.l2-photo .photo {
+.l2-photo  {
   height: 152px;
 }
 
-.m2-photo .photo {
+.m2-photo  {
   height: 140px;
 }
+
+#activities .photo
+{
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+}
+
+.cc1 .photo
+{
+  width: 105%;
+  height: 114%;
+}
+
+.cards-section2 .cc1 .photo
+{
+  filter: saturate(110%) brightness(120%) ;
+}
+
+.cc2 .photo
+{
+  width:100%;
+}
+
+.lc2 .photo,.mc1 .photo
+{
+  height: 138%;
+}
+
+.lc1 .photo
+{
+  height: 132%;
+}
+
+.mc2 .photo
+{
+  height: 140%;
+}
+
+
+
+
 
 #activities .description
 {

@@ -241,9 +241,9 @@ aside .description
 }
 
 .activities-c {
-   padding-top: 55px;
+  padding-top: 55px;
   width: 90%;
-  margin: 0px auto 0 auto ;
+  margin: 0 auto 0 auto ;
   height: auto;
 }
 
@@ -277,7 +277,7 @@ aside .description
   flex-basis: 45%;
 }
 
-#activities .photo {
+#activities .c-photo {
   height: 146px;
 }
 
