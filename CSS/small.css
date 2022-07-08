@@ -287,29 +287,55 @@ aside .description
   height: 60px;
 }
 
+.d-photo
+{
+  display: none;
+}
+
+.mobile-photo
+{
+  display: flex;
+}
+
 
 /*footer*/
 
 footer {
-  height: 540px;
-  justify-content: space-around;
+  height: 535px;
+  padding-top: 0px;
+  padding-bottom: 25px;
 }
 
 .footer-c {
   width: 100%;
   flex-direction: column;
-  height: 430px;
-  
-  margin-left: 35px;
+  height: 470px;
+  margin-left: 5px;
+  padding-top: 5px;
+  justify-content: flex-start;
+}
+
+h3
+{
+  font-size:20px ;
+  margin-bottom: 14px;
 }
 
 footer ul
 {
   font-size: 17px;
+  line-height: 34px;
 }
 
 
-h3
+.about
 {
-  font-size:20px ;
+  margin-bottom: 2px;
+  margin-right: 0;
+}
+
+.charter
+{
+  margin-bottom: 15px;
+  margin-right: 0;
 }

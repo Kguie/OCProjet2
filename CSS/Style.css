@@ -27,23 +27,6 @@ p {
   margin: 0 auto;
 }
 
-a {
-  color: #000000;
-  text-decoration: none;
-}
-
-h1,
-h2 {
-  margin: 0;
-  font-size: 23px;
-  font-weight: 700;
-}
-
-/*a hover effect */
- a:hover
- {
-  color: #0065fc;
- }
 
 /*Header*/
 
@@ -56,10 +39,9 @@ header {
   font-weight: 500;
 }
 
-#booki
-
 /*booki's logo set up*/
-  {
+#booki
+{
   width: 100px;
   height: 50px;
   margin-top: 40px;
@@ -67,6 +49,11 @@ header {
 }
 
 /*nav set up*/
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
 nav
 {
   display: flex;
@@ -80,6 +67,13 @@ nav a {
   border-top: 2px solid transparent;
 }
 
+/*a hover effect */
+a:hover
+{
+ color: #0065fc;
+}
+
+
 /* a:hover moving correction*/
 nav a:hover {
   border-top: solid 2px #0065fc;
@@ -90,6 +84,13 @@ nav a:hover {
 main {
   margin: 30px auto 45px auto;
   width: 93%;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 700;
 }
 
 /*searchbar */
@@ -380,8 +381,6 @@ form .fa-solid {
   justify-content: space-around;
 }
 
-
-
 .inline-bold {
   font-weight: bold;
 }
@@ -427,6 +426,7 @@ form .fa-solid {
   font-size: 13px;
 }
 
+
 /*lodging rating*/
 
 .hotel-card1 .fa-solid:nth-child(-n + 4) {
@@ -470,6 +470,7 @@ form .fa-solid {
   color: #0065fc;
 }
 
+
 /*link set up*/
 
 #more {
@@ -486,6 +487,7 @@ form .fa-solid {
   width: 98%;
   height: 100%;
 }
+
 
 /*Aside popular*/
 
@@ -676,6 +678,7 @@ aside .name
 
 .xl-photo .photo {
   height: 390px;
+  
 }
 
 .l-photo .photo {
@@ -731,6 +734,14 @@ footer {
   width: 93%;
 }
 
+
+h3 {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 13px;
+}
+
+
 .c-footer-links {
   display: flex;
   flex-direction: column;
@@ -745,14 +756,6 @@ footer ul {
   line-height: 28px;
 }
 
-
-
-h3 {
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 13px;
-}
-
 .about
 {
   margin-right: 225px;
@@ -762,3 +765,6 @@ h3 {
 {
   margin-right: 290px;
 }
+
+
+

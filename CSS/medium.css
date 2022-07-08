@@ -65,4 +65,12 @@ aside .title
 
 .footer-c {
   width: 86%;
+  justify-content: space-between;
+}
+
+
+
+.about,.charter
+{
+  margin-right: 0;
 }
