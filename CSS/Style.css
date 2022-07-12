@@ -413,13 +413,13 @@ form .fa-solid {
 
 .name {
   font-weight: 700;
-  line-height: 14px;
 }
 
 .hotels .name
 {
   margin: 5px 0px 6px 0;
-  font-size: 15px
+  font-size: 15px;
+  line-height: 14px;
 }
 
 .price {
@@ -561,7 +561,9 @@ aside .description
 aside .name
 {
   margin-top: 0;
-  font-size: 15px
+  font-size: 15px;
+  line-height: 18px;
+
 }
 
 
