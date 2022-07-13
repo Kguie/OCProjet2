@@ -21,6 +21,11 @@ main {
   flex-direction: column;
 }
 
+#c-bars
+{
+  flex-wrap: wrap;
+}
+
 
 /*Lodging article*/
 
@@ -64,7 +69,6 @@ aside .title
 /*Footer*/
 
 .footer-c {
-  width: 86%;
   justify-content: space-between;
 }
 

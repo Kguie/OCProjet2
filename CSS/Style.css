@@ -86,11 +86,18 @@ main {
   width: 93%;
 }
 
-h1,
-h2 {
+h1
+{
   margin: 0;
   font-size: 23px;
   font-weight: 700;
+}
+
+h2
+{
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700; 
 }
 
 /*searchbar */
@@ -170,14 +177,16 @@ h2 {
   margin-right: auto;
 }
 
-form .title,
+
 #c-bars {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 700;
 }
 
 form .title {
-  margin-right: 30px;
+  margin-right: 28px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 
@@ -186,25 +195,24 @@ form .title {
   {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .filter-value {
   display: flex;
   position: relative;
   flex-direction: row;
-  margin-right: 25px;
+  margin-right: 23px;
   margin-bottom: 15px;
   border: #D9D9D9 2px solid;
   border-radius: 30px;
   height: 48px;
   align-items: center;
-  padding-right: 20px;
+  padding-right: 12px;
   border-left: none;
 }
 
 form .fa-solid {
-  margin-right: 15px;
+  margin-right: 10px;
   border-radius: 50%;
   font-size: 20px;
 }
@@ -322,7 +330,7 @@ form .fa-solid {
 
 .hotels {
   display: flex;
-  flex-basis: 65%;
+  flex-basis: 66%;
   background-color: #f2f2f2;
   border-radius: 20px;
   justify-content: space-around;
@@ -331,7 +339,7 @@ form .fa-solid {
 }
 
 .hotels-c {
-  width: 90%;
+  width: 91%;
   height: 530px;
   display: flex;
   flex-direction: column;
@@ -366,7 +374,7 @@ form .fa-solid {
 }
 
 .c-photo {
-  display: inline-flex;
+  display:  flex;
   overflow: hidden;
 }
 
@@ -401,6 +409,7 @@ form .fa-solid {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   flex-direction: column;
+  height: 113px;
 }
 
 .xs-card .description {
@@ -408,7 +417,8 @@ form .fa-solid {
 }
 
 .xs-photo .photo {
-  height: 113px;
+  height: 100%;
+  width: 100%;
 }
 
 .name {
@@ -424,7 +434,7 @@ form .fa-solid {
 
 .price {
   margin: 0;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 
@@ -496,7 +506,7 @@ form .fa-solid {
 aside {
   display: flex;
   flex-direction: column;
-  flex-basis: 30%;
+  flex-basis: 31%;
   background-color: #f2f2f2;
   border-radius: 20px;
   justify-content: space-around;
@@ -504,7 +514,7 @@ aside {
 }
 
 .popular-c {
-  width: 80%;
+  width: 81%;
   height: 550px;
   display: flex;
   flex-direction: column;
@@ -545,24 +555,29 @@ aside .title {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   flex-direction: row;
+  flex-basis: 39%;
+  
+
 }
 
 .s-photo .photo {
-  width: 126px;
+  width: 100%;
+  height: 100%;
 }
 
 aside .description 
 {
  justify-content:space-between ;
- padding: 15px 8px 5px 20px ;
- 
+ padding: 5px 3% 5px 4% ;
+ flex-basis: 61%;
 }
 
 aside .name
 {
   margin-top: 0;
   font-size: 15px;
-  line-height: 18px;
+  line-height: 17px;
+  padding-right: 6px;
 
 }
 
@@ -772,12 +787,13 @@ footer {
   display: flex;
   align-items: center;
   padding-bottom: 5px;
-  padding-left: 50px;
+  
 }
 
 .footer-c {
   display: flex;
   width: 93%;
+  margin: 0 auto;
 }
 
 
@@ -804,13 +820,14 @@ footer ul {
 
 .about
 {
-  margin-right: 225px;
+  flex-basis: 33%;
 }
 
 .charter
 {
-  margin-right: 290px;
+  flex-basis: 34%;
 }
+
 
 
 

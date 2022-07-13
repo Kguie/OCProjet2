@@ -71,7 +71,7 @@ main
   margin-top: 35px;
   border: #F2F2F2 solid 1px;
   border-radius: 16px;
-  width: 334px;
+  width: 95%;
   margin-left: 0;
   margin-bottom: 0;
 }
@@ -93,7 +93,7 @@ main
   height: 52px;
   color: white;
   position: absolute;
-  left: 326px;
+  right: 5%;
   align-self: center;
   padding-left: 15px;
 }
@@ -105,6 +105,12 @@ main
   width: 100%;
  }
 
+ .filter-value
+ {
+  padding-right: 11px;
+  font-size: 16px;
+ }
+
 form .title {
   margin-top: 0px;
 }
@@ -113,7 +119,22 @@ form .title {
   margin-left: 0;
 }
 
+.filter-value {
+margin-right: 11px;
+}
 
+/*info*/
+#info-c {
+  display: flex;
+  margin-right: 14px;
+  color: #0065fc;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #d9d9d9;
+  min-width: 23px;
+  height: 23px;
+  padding-bottom: 2px;
+}
 
 /*lodging*/
 
@@ -307,10 +328,9 @@ footer {
 }
 
 .footer-c {
-  width: 100%;
+  width: 90%;
   flex-direction: column;
   height: 470px;
-  margin-left: 5px;
   padding-top: 5px;
   justify-content: flex-start;
 }
